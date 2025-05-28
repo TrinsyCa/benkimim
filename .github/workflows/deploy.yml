@@ -39,8 +39,21 @@ jobs:
           DEPLOY_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
           DEPLOY_PATH: domains/trinsy.ca/public_html/subdomains/benkimim
         run: |
-          sshpass -p $DEPLOY_PASSWORD ssh -v -o StrictHostKeyChecking=no -p 65002 $DEPLOY_USER@$DEPLOY_HOST << 'EOF'
+          sshpass -p $DEPLOY_PASSWORD ssh -o StrictHostKeyChecking=no -p 65002 $DEPLOY_USER@$DEPLOY_HOST << 'EOF'
             whoami
+            # Install Node.js if not installed
+            if ! command -v node >/dev/null 2>&1; then
+              mkdir -p ~/nodejs
+              cd ~/nodejs
+              wget https://nodejs.org/dist/v20.18.0/node-v20.18.0-linux-x64.tar.xz
+              tar -xJf node-v20.18.0-linux-x64.tar.xz
+              mv node-v20.18.0-linux-x64 ~/node
+              echo 'export PATH=$HOME/node/bin:$PATH' >> ~/.bashrc
+              export PATH=$HOME/node/bin:$PATH
+            fi
+            # Verify Node.js and npm
+            node -v
+            npm -v
             cd $DEPLOY_PATH
             git pull origin main
             composer install --no-interaction --optimize-autoloader --no-dev

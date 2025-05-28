@@ -51,10 +51,10 @@ jobs:
               echo 'export PATH=$HOME/node/bin:$PATH' >> ~/.bashrc
               export PATH=$HOME/node/bin:$PATH
             fi
+            cd /home/$DEPLOY_USER/$DEPLOY_PATH
             # Verify Node.js and npm
             node -v
             npm -v
-            cd $DEPLOY_PATH
             git pull origin main
             composer install --no-interaction --optimize-autoloader --no-dev
             npm install

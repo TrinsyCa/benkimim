@@ -61,6 +61,6 @@ jobs:
             npm run build
             php artisan migrate --force
             php artisan optimize
-            chown -R www-data:www-data .
-            chmod -R 755 storage bootstrap/cache
+            chmod -R 755 storage
+            chmod -R 755 bootstrap/cache
           EOF

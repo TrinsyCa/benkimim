@@ -59,8 +59,6 @@ jobs:
             composer install --no-interaction --optimize-autoloader --no-dev
             npm install
             npm run build
-            php artisan migrate --force
+            php artisan migrate:fresh
             php artisan optimize
-            chmod -R 755 storage
-            chmod -R 755 bootstrap/cache
           EOF

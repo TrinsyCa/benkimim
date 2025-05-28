@@ -37,7 +37,7 @@ jobs:
           DEPLOY_HOST: ${{ secrets.HOSTINGER_HOST }}
           DEPLOY_USER: ${{ secrets.HOSTINGER_USER }}
           DEPLOY_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
-          DEPLOY_PATH: /public_html/benkimim.trinsy.ca
+          DEPLOY_PATH: domains/trinsy.ca/public_html/subdomains/benkimim
         run: |
           sshpass -p $DEPLOY_PASSWORD ssh -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST << 'EOF'
             cd $DEPLOY_PATH

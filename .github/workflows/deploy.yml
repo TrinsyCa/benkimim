@@ -37,7 +37,7 @@ jobs:
           DEPLOY_HOST: ${{ secrets.HOSTINGER_HOST }}
           DEPLOY_USER: ${{ secrets.HOSTINGER_USER }}
           DEPLOY_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
-          DEPLOY_PATH: domains/trinsy.ca/public_html/subdomains/benkimim
+          DEPLOY_PATH: /home/$DEPLOY_USER/domains/trinsy.ca/public_html/subdomains/benkimim
         run: |
           sshpass -p $DEPLOY_PASSWORD ssh -o StrictHostKeyChecking=no -p 65002 $DEPLOY_USER@$DEPLOY_HOST << 'EOF'
             whoami
@@ -51,7 +51,8 @@ jobs:
               echo 'export PATH=$HOME/node/bin:$PATH' >> ~/.bashrc
               export PATH=$HOME/node/bin:$PATH
             fi
-            cd ../$DEPLOY_PATH
+            cd $DEPLOY_PATH
+            pwd
             ls -la
             # Verify Node.js and npm
             node -v

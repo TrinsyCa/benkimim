@@ -1,12 +1,16 @@
 .gamelist {
     width: 1200px;
-    display: flex;
-    align-items: center;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: var(--cool-black);
+    gap: 10px;
+    padding: 15px;
+    border-radius: calc(20px + 15px);
+    background: var(--gamelist-bg);
+    backdrop-filter: blur(8px);
+    user-select: none;
+    box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.6);
 }
 .gamelist-container {
     width: 100%;
@@ -15,13 +19,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 .playgame-container,
 .game-list-container {
     width: 100%;
-    background-color: var(--crow);
-    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 10px;
     border-radius: 20px;
 }
 .playgame-item {
@@ -38,9 +42,9 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border-radius: 20px;
-    background-color: var(--parisian-night);
-    transition: background-color 0.3s ease, scale 0.2s ease;
+    border-radius: calc(20px - 10px);
+    background-color: rgb(255,255,255,0.15);
+    transition: background-color 0.3s ease, scale 0.2s ease, width 0.3s ease;
 }
 .playgame-item .play-button span {
     display: flex;
@@ -53,11 +57,12 @@
 }
 .playgame-item .play-button:hover,
 .playgame-item .play-button:active {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: calc(100% + 50%);
 }
 .playgame-item .play-button.create-game:hover,
 .playgame-item .play-button.create-game:active {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 .playgame-item .play-button:active {
     scale: 0.9;
@@ -66,19 +71,187 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: var(--cool-black);
-    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    height: calc(700px - (15px * 2));
+    padding: 10px;
+    border-radius: 20px;
+    overflow: auto;
+}
+.gamelist-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 12px;
+    background: rgb(255,255,255,0.15);
+    padding: 10px;
+    border-radius: calc(20px - 10px);
+    transition: background-color 0.3s ease, scale 0.2s ease;;
+}
+.gamelist-category * {
+    pointer-events: none;
+}
+.gamelist-category:hover,
+.gamelist-category:active {
+    background-color: var(--primary-color);
+}
+.gamelist-category:active {
+    scale: 0.9;
+}
+.gamelist-category .gamelist-category-title {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .gamelist-category .game-logo {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     object-position: center;
+}
+.gamelist-category .game-logo.rectangle {
+    width: auto;
 }
 .gamelist-category-title {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 1.5rem;
+}
+.gamelist-category-title h3 {
+    font-size: 1.2rem;
+}
+.gamelist-category p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+}
+.gamelist-category p:last-child {
+    font-size: 0.8rem;
+}
+.gamelist-category p svg {
+    width: 16px;
+    height: 16px;
+}
+.game-list-container-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: calc(700px - (15px * 2) - 170px - 30px);
+    overflow: auto;
+    border-radius: calc(20px - 10px);
+}
+.game-list-container {
+    position: relative;
+}
+.game-list-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0,0.35));
+    pointer-events: none;
+    border-radius: 20px;
+}
+.game-list-container-table::-webkit-scrollbar {
+    width: 0;
+}
+.game-list-container .game-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: calc(20px - 10px);
+    background-color: rgb(255,255,255,0.15);
+    transition: background-color 0.3s ease, scale 0.2s ease;
+}
+.game-list-container .game-item:hover,
+.game-list-container .game-item:active {
+    background-color: var(--primary-color);
+}
+.game-list-container .game-item:active {
+    scale: 0.96;
+}
+.game-list-container .game-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+.game-list-container .game-item .game-item-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.game-list-container .game-item-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.game-list-container .game-item h5 {
+    background: white;
+    color: #C89C38;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: 5px 0;
+}
+.game-list-container .game-item .game-item-rectangle {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    border-radius: calc(20px - 10px);
+    background-color: rgb(255,255,255,0.1);
+    transition: background-color 0.3s ease, height 0.2s ease, width 0.2s ease;
+}
+.game-list-container .game-item:hover .game-item-rectangle,
+.game-list-container .game-item:active .game-item-rectangle {
+    background-color: var(--primary-color);
+    height: 100px;
+}
+.game-list-container .game-item .game-item-logo-side {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.game-item-users-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-item-user {
+    margin-left: -15px;
+}
+.game-item-users-count {
+    padding-right: 15px;
+    text-align: center;
+}
+.game-item-users-count span {
+    color: var(--text-color-secondary);
+}
+.game-item-users .game-item-user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.game-item-user-details {
+    width: 40%;
+}
+.game-item-createtime {
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
 }

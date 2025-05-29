@@ -205,10 +205,10 @@
     margin: 5px 0;
 }
 .game-list-container .game-item .game-item-rectangle {
-    height: 70px;
-    width: auto;
+    width: 150px;
+    height: 85px;
     object-fit: contain;
-    object-position: center;
+    object-position: left;
     padding: 10px;
     border-radius: calc(20px - 10px);
     background-color: rgb(255,255,255,0.1);
@@ -217,7 +217,7 @@
 .game-list-container .game-item:hover .game-item-rectangle,
 .game-list-container .game-item:active .game-item-rectangle {
     background-color: var(--primary-color);
-    height: 100px;
+    width: 220px;
 }
 .game-list-container .game-item .game-item-logo-side {
     display: flex;
@@ -251,7 +251,16 @@
 .game-item-user-details {
     width: 40%;
 }
-.game-item-createtime {
+.game-item-footer {
+    display: flex;
+    align-items: center;
+    gap: 3px;
     font-size: 0.9rem;
+}
+.game-item-footer svg {
+    width: 20px;
+    height: 20px;
+}
+.game-item-footer:last-child {
     color: var(--text-color-secondary);
 }

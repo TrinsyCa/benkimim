@@ -76,6 +76,23 @@ footer * {
     font-weight: normal;
     font-style: normal;
 }
-*[font="Netflix"] {
-    font-family: 'Netflix', Arial, sans-serif;
+*[font="netflix"] {
+    font-family: 'netflix', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'marvel';
+    src: url('/assets/fonts/categories/netflix/BebasNeue.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*[font="marvel"] {
+    font-family: 'marvel', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }

@@ -42,6 +42,8 @@ services:
       MYSQL_PASSWORD: userpassword
     volumes:
       - dbdata:/var/lib/mysql
+    ports:
+      - "3306:3306"
     networks:
       - benkimim-network
 

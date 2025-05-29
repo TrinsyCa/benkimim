@@ -55,10 +55,9 @@ jobs:
             # Verify Node.js and npm
             node -v
             npm -v
-            git pull origin main
+            ls -la
+            git pull https://github.com/TrinsyCa/benkimim.git main
             php composer.phar install --no-interaction --optimize-autoloader --no-dev
-            npm install
-            npm run build
             php artisan migrate:fresh
             php artisan optimize
           EOF

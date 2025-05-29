@@ -51,11 +51,11 @@ jobs:
               echo 'export PATH=$HOME/node/bin:$PATH' >> ~/.bashrc
               export PATH=$HOME/node/bin:$PATH
             fi
-            cd /home/$DEPLOY_USER/$DEPLOY_PATH
+            cd ../$DEPLOY_PATH
+            ls -la
             # Verify Node.js and npm
             node -v
             npm -v
-            ls -la
             git pull https://github.com/TrinsyCa/benkimim.git main
             php composer.phar install --no-interaction --optimize-autoloader --no-dev
             php artisan migrate:fresh

@@ -56,7 +56,7 @@ jobs:
             node -v
             npm -v
             git pull origin main
-            composer install --no-interaction --optimize-autoloader --no-dev
+            php composer.phar install --no-interaction --optimize-autoloader --no-dev
             npm install
             npm run build
             php artisan migrate:fresh

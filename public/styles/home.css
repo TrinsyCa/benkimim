@@ -12,6 +12,7 @@
     font-size: 3.5rem;
     color: var(--text-color);
     text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255, 0.5);
 }
 .home-content {
     width: 1200px;

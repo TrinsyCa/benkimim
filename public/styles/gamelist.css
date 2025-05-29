@@ -172,6 +172,9 @@
     background-color: rgb(255,255,255,0.15);
     transition: background-color 0.3s ease, scale 0.2s ease;
 }
+.game-list-container .game-item * {
+    pointer-events: none;
+}
 .game-list-container .game-item:hover,
 .game-list-container .game-item:active {
     background-color: var(--primary-color);

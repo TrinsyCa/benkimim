@@ -59,6 +59,9 @@ jobs:
             npm -v
             git pull https://github.com/TrinsyCa/benkimim.git main
             php composer.phar install --no-interaction --optimize-autoloader --no-dev
+            npm install
+            npm run build
             php artisan migrate:fresh
             php artisan optimize
+            chmod -R 755 storage bootstrap/cache
           EOF

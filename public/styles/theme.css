@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #501e91;
+    --secondary-color: #2ecc71;
+    --background: linear-gradient(135deg, #23095f, #491e99,#2e075e);
+    --text-color: #f2f2f2;
+    --border-color: #bdc3c7;
+    --hover-color: #2980b9;
+    --active-color: #27ae60;
+
+    /* Saved Colors */
+    /* Black Thones */
+    --parisian-night: #323441;
+    --cool-black: #151922;
+    --crow: #0d0907;
+}
+@font-face {
+    font-family: 'MaikyRetroDemoRegular';
+    src: url('/assets/fonts/MaikyRetroDemoRegular-vnO64.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter Italic';
+    src: url('/assets/fonts/Inter-VariableFont_opsz,wght.otf') format('opentype'),
+         url('/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter Normal';
+    src: url('/assets/fonts/Inter-VariableFont_opsz,wght.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Inter Italic', Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+footer * {
+    font-family: 'Inter Normal', Arial, sans-serif;
+}
+.font-logo {
+    font-family: 'MaikyRetroDemoRegular', Arial, sans-serif;
+    font-size: 1.5rem;
+}

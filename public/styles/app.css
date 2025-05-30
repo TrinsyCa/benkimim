@@ -8,3 +8,19 @@ body {
     min-height: 100svh;
     background: var(--background);
 }
+.content {
+    width: 100%;
+    min-height: calc(100svh - 84px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.content h1.font-logo {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255, 0.5);
+}

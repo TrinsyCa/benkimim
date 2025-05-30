@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Anasayfa | Ben Kimim?')
+@section('title', 'Hata Sayfası | Ben Kimim?')
 @section('description', 'Ben Kimim? oyun platformuna hoş geldiniz! Burada arkadaşlarınızla birlikte eğlenceli oyunlar oynayabilir, yeni arkadaşlıklar kurabilir ve rekabet dolu anlar yaşayabilirsiniz. Hemen bir oyun oluşturun veya mevcut bir oyuna katılın!')
 @section('keywords', 'Ben Kimim, oyun platformu, arkadaşlar, oyunlar, League of Legends, Valorant, oyun oluşturma, oyun katılma')
 @section('author', 'Ben Kimim? Oyun Platformu')

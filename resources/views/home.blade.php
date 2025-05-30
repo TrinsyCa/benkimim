@@ -5,7 +5,7 @@
 @section('author', 'Ben Kimim? Oyun Platformu')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('styles/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/home.css') }}?v={{ filemtime(public_path('styles/home.css')) }}">
 @endsection
 
 @section('content')

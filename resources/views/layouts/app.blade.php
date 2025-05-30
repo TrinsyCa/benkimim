@@ -7,12 +7,12 @@
     <title>@yield('title','Ben Kimim?')</title>
     
     <!-- Static Styles -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}" type="image/webp">
-    <link rel="stylesheet" href="{{ asset('styles/theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/footer.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/gamelist.css') }}">
+    <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}?v={{ filemtime(public_path('assets/images/favicon.webp')) }}" type="image/webp">
+    <link rel="stylesheet" href="{{ asset('styles/theme.css') }}?v={{ filemtime(public_path('styles/theme.css')) }}">
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}?v={{ filemtime(public_path('styles/app.css')) }}">
+    <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}?v={{ filemtime(public_path('styles/navbar.css')) }}">
+    <link rel="stylesheet" href="{{ asset('styles/footer.css') }}?v={{ filemtime(public_path('styles/footer.css')) }}">
+    <link rel="stylesheet" href="{{ asset('styles/gamelist.css') }}?v={{ filemtime(public_path('styles/gamelist.css')) }}">
     <!-- Static Styles -->
 
     <!-- Dynamic Styles -->

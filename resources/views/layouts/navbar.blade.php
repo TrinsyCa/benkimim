@@ -2,7 +2,7 @@
     <div class="nav-container">
         <div class="logo">
             <a href="{{ url('') }}">
-                <img src="{{ asset('assets/images/favicon.webp') }}" alt="Ben Kimim Logo" class="logo-image">
+                <img src="{{ asset('assets/images/favicon.webp') }}?v={{ filemtime(public_path('assets/images/favicon.webp')) }}" alt="Ben Kimim Logo" class="logo-image">
             </a>
         </div>
         <ul>

@@ -8,7 +8,7 @@
         </div>
         <div class="game-list-container">
             <div class="game-list-tab-container">
-                <button id="gamelistTabActivePlaysBtn" class="active">Aktif Oynanan</button>
+                <button id="gamelistTabActivePlaysBtn" class="active">Aktif Oyunlar</button>
                 <button id="gamelistTabPlayedGamesBtn">Geçmiş Oyunlarım</button>
             </div>
             <div class="game-list-tab-sides-container" id="gamelistTabSidesContainer">
@@ -18,11 +18,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Sihirdar Vadisi</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -59,11 +59,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="valorant">Haven</b>
-                                <img src="{{ asset('assets/images/categories/valorant/rectangle-logo.webp') }}" alt="Valorant Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/valorant/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/rectangle-logo.webp')) }}" alt="Valorant Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}" alt="Valorant Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/shortcut-icon.webp')) }}" alt="Valorant Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -100,11 +100,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Bandle Şehri</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -141,11 +141,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="netflix">Dexter</b>
-                                <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}" alt="Netflix Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/rectangle-logo.webp')) }}" alt="Netflix Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}" alt="Netflix Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/shortcut-icon.webp')) }}" alt="Netflix Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -182,11 +182,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Ionia</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -223,11 +223,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="marvel">Iron Man</b>
-                                <img src="{{ asset('assets/images/categories/marvel/rectangle-logo.webp') }}" alt="Netflix Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/marvel/rectangle-logo-wSpaces.webp') }}?v={{ filemtime(public_path('assets/images/categories/marvel/rectangle-logo-wSpaces.webp')) }}" alt="Netflix Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/marvel/shortcut-icon.webp') }}" alt="Netflix Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/marvel/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/marvel/shortcut-icon.webp')) }}" alt="Netflix Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -264,11 +264,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Hextech Ultimatum</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -307,11 +307,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Sex Vadisi</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -348,11 +348,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="valorant">Haven</b>
-                                <img src="{{ asset('assets/images/categories/valorant/rectangle-logo.webp') }}" alt="Valorant Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/valorant/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/rectangle-logo.webp')) }}" alt="Valorant Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}" alt="Valorant Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/shortcut-icon.webp')) }}" alt="Valorant Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -389,11 +389,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Bandle Şehri</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -430,11 +430,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="netflix">Dexter</b>
-                                <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}" alt="Netflix Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/rectangle-logo.webp')) }}" alt="Netflix Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}" alt="Netflix Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/shortcut-icon.webp')) }}" alt="Netflix Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -471,11 +471,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Ionia</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -512,11 +512,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="marvel">Iron Man</b>
-                                <img src="{{ asset('assets/images/categories/marvel/rectangle-logo.webp') }}" alt="Netflix Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/marvel/rectangle-logo-wSpaces.webp') }}?v={{ filemtime(public_path('assets/images/categories/marvel/rectangle-logo-wSpaces.webp')) }}" alt="Netflix Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/marvel/shortcut-icon.webp') }}" alt="Netflix Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/marvel/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/marvel/shortcut-icon.webp')) }}" alt="Netflix Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -553,11 +553,11 @@
                         <div class="game-item-flex">
                             <div class="game-item-title">
                                 <b font="leagueoflegends">Hextech Ultimatum</b>
-                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}" alt="League of Legends Logo" class="game-item-rectangle">
+                                <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
                                 <div class="game-item-logo-side">
-                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                                 </div>
                                 <br>
                                 <div class="game-item-users">
@@ -616,7 +616,7 @@
             <div class="gamelist-categories">
                 <div class="gamelist-category">
                     <div class="gamelist-category-title">
-                        <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                        <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                         <h3 font="leagueoflegends">League Of Legends</h3>
                     </div>
                     <p>Anlık Oyuncu: 258</p>
@@ -624,7 +624,7 @@
                 </div>
                 <div class="gamelist-category">
                     <div class="gamelist-category-title">
-                        <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}" alt="Valorant Logo" class="game-logo">
+                        <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/shortcut-icon.webp')) }}" alt="Valorant Logo" class="game-logo">
                         <h3 font="valorant">Valorant</h3>
                     </div>
                     <p>Anlık Oyuncu: 58</p>
@@ -639,14 +639,14 @@
                 </div>
                 <div class="gamelist-category">
                     <div class="gamelist-category-title">
-                        <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}" alt="Netflix Logo" class="game-logo rectangle">
+                        <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/rectangle-logo.webp')) }}" alt="Netflix Logo" class="game-logo rectangle">
                     </div>
                     <p>Anlık Oyuncu: 153</p>
                     <p><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" fill="none"/><path fill="#ffdd67" d="M2 32c0 16.6 13.4 30 30 30s30-13.4 30-30S48.6 2 32 2S2 15.4 2 32"/><path fill="#65b1ef" d="M47.7 37.6c0 8.6 11.7 8.6 11.7 0c0-6.3-5.8-12.4-5.8-12.4s-5.9 6.1-5.9 12.4"/><g fill="#664e27"><circle cx="38.5" cy="35" r="5"/><circle cx="15.5" cy="35" r="5"/></g><path fill="#917524" d="M20.6 19.9c-3.2 2.7-7.5 3.9-11.7 3.1c-.6-.1-1.1 2-.4 2.2c4.8.9 9.8-.5 13.5-3.6c.5-.5-1-2.1-1.4-1.7m24.5 3c-4.2.7-8.5-.4-11.7-3.1c-.4-.4-2 1.2-1.4 1.7c3.7 3.2 8.7 4.5 13.5 3.6c.7-.2.2-2.3-.4-2.2"/><path fill="#664e27" d="M38.1 47.3c-5.8-1.5-12-.4-16.9 3c-1.2.9 1.1 4 2.3 3.2c3.2-2.3 8.4-3.8 13.7-2.4c1.3.3 2.4-3.3.9-3.8"/></svg> Hiç Denemedin</p>
                 </div>
                 <div class="gamelist-category">
                     <div class="gamelist-category-title">
-                        <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}" alt="Disney Logo" class="game-logo rectangle">
+                        <img src="{{ asset('assets/images/categories/netflix/rectangle-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/rectangle-logo.webp')) }}" alt="Disney Logo" class="game-logo rectangle">
                         <h3 font="valorant">Test</h3>
                     </div>
                     <p>Anlık Oyuncu: 153</p>
@@ -654,7 +654,7 @@
                 </div>
                 <div class="gamelist-category">
                     <div class="gamelist-category-title">
-                        <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League of Legends Logo" class="game-logo">
+                        <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends Logo" class="game-logo">
                         <h3 font="leagueoflegends">Test 2</h3>
                     </div>
                     <p>Anlık Oyuncu: 258</p>

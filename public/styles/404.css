@@ -1,0 +1,16 @@
+.errorBtn {
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition: 0.25s ease;
+    color: #491e99;
+}
+.errorBtn:hover,
+.errorBtn:active {
+    background-color: #491e99;
+    color: white;
+}
+.errorBtn:active {
+    scale: 0.9;
+}

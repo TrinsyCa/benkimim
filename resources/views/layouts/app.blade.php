@@ -23,5 +23,9 @@
     @include('layouts.navbar')
     @yield('content')
     @include('layouts.footer')
+    
+    <!-- Dynamic Scripts -->
+    @yield('scripts')
+    <!-- Dynamic Scripts -->
 </body>
 </html>

@@ -28,19 +28,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -69,19 +69,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -110,19 +110,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -151,19 +151,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -192,19 +192,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -233,19 +233,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -274,19 +274,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -317,19 +317,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -358,19 +358,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -399,19 +399,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -440,19 +440,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -481,19 +481,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -522,19 +522,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -563,19 +563,19 @@
                                 <div class="game-item-users">
                                     <div class="game-item-users-container">
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 1" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 1" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 2" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 2" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                         <div class="game-item-user">
-                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User 3" class="game-item-user-image">
+                                            <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User 3" class="game-item-user-image">
                                         </div>
                                     </div>
                                     <div class="game-item-users-count">
@@ -599,7 +599,7 @@
         <div class="gamelist-profile-menu">
             <div class="gamelist-profile">
                 <div class="gamelist-profile-top">
-                    <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="User Profile" class="gamelist-profile-picture">
+                    <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User Profile" class="gamelist-profile-picture">
                     <div class="gamelist-profile-details">
                         <h3>@TrinsyCa</h3>
                         <p>Oynanan Oyunlar: 3</p>

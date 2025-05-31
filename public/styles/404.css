@@ -5,6 +5,7 @@
     border: 2px solid white;
     transition: 0.25s ease;
     color: #491e99;
+    font-weight: bold;
 }
 .errorBtn:hover,
 .errorBtn:active {

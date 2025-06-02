@@ -16,7 +16,7 @@
                     <form id="createGameForm" action="{{ url('/play/create') }}" method="POST">
                         @csrf
                         <div class="inputBox">
-                            <label for="gameName">Oyun Adı</label>
+                            <label for="gameName">Oda Adı</label>
                             <input type="text" id="gameName" name="gameName" value="Kayacıl" required readonly>
                         </div>
                         <div class="inputBox selectBox">

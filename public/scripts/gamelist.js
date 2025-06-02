@@ -6,13 +6,10 @@ const gamelistTabSides = document.getElementById('gamelistTabSides');
 gamelistTabActivePlaysBtn.addEventListener('click', () => {
   gamelistTabActivePlaysBtn.classList.add('active');
   gamelistTabPlayedGamesBtn.classList.remove('active');
-
   gamelistTabSides.style.translate = '0px';
 });
 gamelistTabPlayedGamesBtn.addEventListener('click', () => {
   gamelistTabPlayedGamesBtn.classList.add('active');
   gamelistTabActivePlaysBtn.classList.remove('active');
-
   gamelistTabSides.style.translate = `-${gamelistTabSidesContainer.offsetWidth}px 0px`;
-
 });

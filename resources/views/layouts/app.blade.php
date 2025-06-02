@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','Ben Kimim?')</title>
     
-    <!-- Static Styles -->
+    {{-- Static Styles --}}
     <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}?v={{ filemtime(public_path('assets/images/favicon.webp')) }}" type="image/webp">
     <link rel="stylesheet" href="{{ asset('styles/theme.css') }}?v={{ filemtime(public_path('styles/theme.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}?v={{ filemtime(public_path('styles/app.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}?v={{ filemtime(public_path('styles/navbar.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/footer.css') }}?v={{ filemtime(public_path('styles/footer.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/gamelist.css') }}?v={{ filemtime(public_path('styles/gamelist.css')) }}">
-    <!-- Static Styles -->
+    {{-- Static Styles --}}
 
-    <!-- Dynamic Styles -->
+    {{-- Dynamic Styles --}}
     @yield('styles')
-    <!-- Dynamic Styles -->
+    {{-- Dynamic Styles --}}
 </head>
 <body>
     @include('layouts.navbar')
     @yield('content')
     @include('layouts.footer')
     
-    <!-- Dynamic Scripts -->
+    {{-- Static Scripts --}}
+    <script src="{{ asset('scripts/app.js') }}?v={{ filemtime(public_path('scripts/app.js')) }}"></script>
+    {{-- Static Scripts --}}
+
+    {{-- Dynamic Scripts --}}
     @yield('scripts')
-    <!-- Dynamic Scripts -->
+    {{-- Dynamic Scripts  --}}
 </body>
 </html>

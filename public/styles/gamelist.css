@@ -19,12 +19,16 @@
     flex-direction: column;
     gap: 10px;
 }
+.playgame-container {
+    position: relative;
+}
 .playgame-container,
 .game-list-container {
     width: 100%;
     background-color: rgb(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 20px;
+    transition: background-color 0.3s ease, scale 0.2s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 .playgame-item {
     width: 100%;
@@ -32,6 +36,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    position: relative;
 }
 .playgame-item .play-button {
     width: 100%;
@@ -42,13 +47,14 @@
     padding: 10px;
     border-radius: calc(20px - 10px);
     background-color: rgb(255,255,255,0.15);
-    transition: background-color 0.3s ease, scale 0.2s ease, width 0.3s ease;
+    transition: background-color 0.3s ease, scale 0.2s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 .playgame-item .play-button span {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: opacity 0.3s ease;
 }
 .playgame-item .play-button span b {
     font-size: 1.8rem;
@@ -107,6 +113,7 @@
     padding: 10px;
     border-radius: calc(20px - 10px);
     transition: background-color 0.3s ease, scale 0.2s ease;
+    cursor: pointer;
 }
 .gamelist-category * {
     pointer-events: none;
@@ -158,6 +165,8 @@
 }
 .game-list-container {
     position: relative;
+    overflow: hidden;
+    height: 500px;
 }
 .game-list-container::after {
     content: '';
@@ -182,6 +191,7 @@
     border-radius: calc(20px - 10px);
     background-color: rgb(255,255,255,0.15);
     transition: background-color 0.3s ease, scale 0.2s ease;
+    cursor: pointer;
 }
 .game-list-container .game-item * {
     pointer-events: none;
@@ -286,11 +296,14 @@
     justify-content: center;
     gap: 10px;
     border-radius: calc(20px - 10px);
+    transition: height 0.3s ease, width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
 }
 .game-list-tab-sides-container {
     width: 840px;
     overflow: hidden;
     border-radius: calc(20px - 10px);
+    transition: height 0.3s ease, width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
 }
 .game-list-tab-sides {
     width: 100%;
@@ -409,4 +422,193 @@
     height: 50px;
     object-fit: contain;
     object-position: center;
+}
+#startGameSection.createGameActive .playgame-item {
+    gap: 0;
+}
+#startGameSection.createGameActive .playgame-item .play-button span {
+    opacity: 0;
+}
+#startGameSection.createGameActive .playgame-item .play-button:first-child {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    height: 650px;
+}
+#startGameSection.createGameActive .playgame-item .play-button:last-child {
+    height: 650px;
+    pointer-events: none;
+}
+#startGameSection.createGameActive .gamelist-container {
+    justify-content: end;
+    gap: 0;
+}
+#startGameSection.createGameActive .game-list-container {
+    height: 0;
+    padding: 0;
+    pointer-events: none;
+}
+#playButtonSections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#playButtonSections,
+#playButtonSections .create-play-section {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#playButtonSections .create-play-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+#startGameSection.createGameActive #playButtonSections,
+#startGameSection.createGameActive #playButtonSections.creategame .create-play-section {
+    opacity: 1;
+    pointer-events: all;
+} 
+#playButtonSections .create-play-section #createGameForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: calc(20px - 10px);
+}
+#playButtonSections .create-play-section .backtoGameList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, scale 0.2s ease;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 8px 15px;
+    background-color: rgb(255,255,255,0.15);
+}
+#playButtonSections .create-play-section .backtoGameList svg {
+    width: 20px;
+    height: 20px;
+}
+#playButtonSections .create-play-section .backtoGameList:hover {
+    background-color: rgb(255,255,255,0.2);
+}
+#playButtonSections .create-play-section .backtoGameList:active {
+    scale: 0.85;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox {
+    width: 400px;
+    background-color: rgb(255,255,255,0.15);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    transition: background 0.3s ease, border-radius 0.3s ease; /* Animasyon için */
+}
+#playButtonSections .create-play-section #createGameForm .inputBox.active {
+    background-color: rgb(255,255,255,0.25);
+    border-radius: 10px 10px 0 0;
+}
+#playButtonSections .create-play-section #createGameForm label {
+    padding: 8px;
+}
+#playButtonSections .create-play-section #createGameForm input,
+#playButtonSections .create-play-section #createGameForm select {
+    background-color: rgb(255,255,255,0.1);
+    padding: 8px 15px;
+    border-radius: calc(10px - 4px);
+    text-align: center;
+    width: 100%;
+    border: 1px solid transparent;
+    transition: border 0.2s ease;
+}
+#playButtonSections .create-play-section #createGameForm input[readonly] {
+    pointer-events: none;
+}
+#playButtonSections .create-play-section #createGameForm select:focus {
+    border: 1px solid rgb(255,255,255,0.5);
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .custom-select {
+    position: relative;
+    width: 100%;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .selected-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: calc(10px - 4px);
+    background: rgb(255,255,255,0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .option-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .options {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #725C82, #735C81);
+    border-radius: 0 0 calc(10px - 4px) calc(10px - 4px);
+    margin-top: 2px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    outline: 4px solid rgb(255,255,255,0.25);
+    transition: opacity 0.3s ease;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .options .options-container {
+    border-radius: calc(10px - 4px);
+    overflow-y: auto;
+    height: 0;
+    transition: height 0.3s ease;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .options .options-container::-webkit-scrollbar {
+    width: 0;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .options {
+    pointer-events: all;
+    opacity: 1;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .options .options-container {
+    height: 132px;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .selected-option {
+    background: rgb(255,255,255,0.3);
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: calc(10px - 4px);
+    transition: background 0.3s ease;
+}
+#playButtonSections .create-play-section #createGameForm .inputBox .option:hover {
+    background: rgb(255,255,255,0.3);
 }

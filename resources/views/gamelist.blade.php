@@ -1,9 +1,61 @@
-<div class="gamelist">
+<div class="gamelist" id="startGameSection">
     <div class="gamelist-container">
         <div class="playgame-container">
             <div class="playgame-item">
-                <a href="{{ url('/play/queue') }}" class="play-button"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#fff" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z"/></svg> <b>Bir Oyuna Katıl</b></span></a>
-                <a href="{{ url('/create') }}" class="play-button create-game"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none" fill-rule="evenodd"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h4z"/></g></svg> <b>Oyun Oluştur</b></span></a>
+                <button onclick="joinGameSection(this);" href="{{ url('/play/queue') }}" class="play-button"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#fff" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z"/></svg> <b>Bir Oyuna Katıl</b></span></button>
+                <button onclick="createGameSection(this);" class="play-button create-game"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none" fill-rule="evenodd"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h4z"/></g></svg> <b>Oyun Oluştur</b></span></button>
+            </div>
+            <div id="playButtonSections">
+                <div class="create-play-section">
+                    <button class="backtoGameList" onclick="closeCreateGameSection();">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="none"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
+                        <span>Geri Dön</span>
+                    </button>
+                    <h2>Oyun Oluştur</h2>
+                    <p>Oyun oluşturmak için lütfen aşağıdaki bilgileri doldurun</p>
+                    <form id="createGameForm" action="{{ url('/play/create') }}" method="POST">
+                        @csrf
+                        <div class="inputBox">
+                            <label for="gameName">Oyun Adı</label>
+                            <input type="text" id="gameName" name="gameName" value="Kayacıl" required readonly>
+                        </div>
+                        <div class="inputBox selectBox">
+                            <label for="gameCategory">Kategori Seçin</label>
+                            <div class="custom-select">
+                                <div class="selected-option">
+                                    <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends" class="option-image">
+                                    <span font="leagueoflegends">League of Legends</span>
+                                </div>
+                                <div class="options">
+                                    <div class="options-container">
+                                        <div class="option" data-value="leagueoflegends">
+                                            <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/shortcut-icon.webp')) }}" alt="League of Legends" class="option-image">
+                                            <span font="leagueoflegends">League of Legends</span>
+                                        </div>
+                                        <div class="option" data-value="valorant">
+                                            <img src="{{ asset('assets/images/categories/valorant/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/valorant/shortcut-icon.webp')) }}" alt="Valorant" class="option-image">
+                                            <span font="valorant">Valorant</span>
+                                        </div>
+                                        <div class="option" data-value="strangerthings">
+                                            <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/shortcut-icon.webp')) }}" alt="Stranger Things" class="option-image">
+                                            <span font="netflix">Stranger Things</span>
+                                        </div>
+                                        <div class="option" data-value="marvel">
+                                            <img src="{{ asset('assets/images/categories/marvel/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/marvel/shortcut-icon.webp')) }}" alt="Marvel" class="option-image">
+                                            <span font="marvel">Marvel Evreni</span>
+                                        </div>
+                                        <div class="option" data-value="dexter">
+                                            <img src="{{ asset('assets/images/categories/netflix/shortcut-icon.webp') }}?v={{ filemtime(public_path('assets/images/categories/netflix/shortcut-icon.webp')) }}" alt="Dexter" class="option-image">
+                                            <span font="netflix">Dexter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="gameCategory" id="gameCategory" value="leagueoflegends">
+                            </div>
+                        </div>
+                        {{-- <button type="submit" class="create-game-submit">Oyun Oluştur</button> --}}
+                    </form>
+                </div>
             </div>
         </div>
         <div class="game-list-container">
@@ -666,4 +718,5 @@
 </div>
 @section('scripts')
 <script src="{{ asset("scripts/gamelist.js") }}"></script>
+<script src="{{ asset("scripts/loadgame.js") }}"></script>
 @endsection

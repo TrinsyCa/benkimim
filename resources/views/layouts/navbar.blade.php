@@ -6,10 +6,10 @@
             </a>
         </div>
         <ul>
-            <li><a href="{{ url('/') }}">Home</a></li>
-            <li><a href="{{ url('/about') }}">About</a></li>
-            <li><a href="{{ url('/contact') }}">Contact</a></li>
-            <li><a href="{{ url('/settings') }}">Settings</a></li>
+            <li><a href="{{ url('#') }}">Şimdi Oyna</a></li>
+            <li><a href="{{ url('#howtoplay') }}">Nasıl Oynanır ?</a></li>
+            <li><a href="{{ url('#about') }}">Hakkımızda</a></li>
+            <li><a href="{{ url('#contact') }}">İletişim</a></li>
         </ul>
     </div>
 </nav>

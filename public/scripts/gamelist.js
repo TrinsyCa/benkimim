@@ -16,6 +16,6 @@ gamelistTabPlayedGamesBtn.addEventListener('click', () => {
 
 function createGameBtn(btnElement) {
   btnElement.classList.add('active');
-  btnElement.innerText = 'Oyun Başlatılıyor..';
+  btnElement.querySelector('span').innerText = 'Oyun Başlatılıyor..';
   gamePasswordBool = true;
 }

@@ -656,6 +656,7 @@
 }
 .inputBox #createRoomBtn {
     width: 100%;
+    height: 45px;
     padding: 10px;
     border-radius: calc(10px - 4px);
     background-color: rgb(255,255,255,0.1);
@@ -664,6 +665,25 @@
     transition: bottom 0.3s ease, background-color 0.3s ease, scale 0.2s ease;
     cursor: pointer;
 }
+.inputBox #createRoomBtn span {
+    position: relative;
+    z-index: 5;
+    font-size: 1.1rem;
+}
+.inputBox #createRoomBtn.active span {
+    animation: scaleLoading 2.5s infinite;
+}
+@keyframes scaleLoading {
+    0% {
+        font-size: 0.9rem;
+    }
+    50% {
+        font-size: 1.1rem;
+    }
+    100% {
+        font-size: 0.9rem;
+    }
+}
 .inputBox #createRoomBtn:hover {
     background-color: rgb(255,255,255,0.2);
 }
@@ -671,5 +691,29 @@
     scale: 0.95;
 }
 .inputBox #createRoomBtn.active {
+    position: relative;
+    overflow: hidden;
     background-color: var(--secondary-color);
+}
+.inputBox #createRoomBtn.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(10px - 4px);
+    background-color: var(--active-color);
+    animation: loading 2.5s infinite;
+}
+@keyframes loading {
+    0% {
+        top: -100%;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
 }

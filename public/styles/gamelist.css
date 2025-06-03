@@ -654,7 +654,7 @@
     background-color: rgb(255,255,255,0.3);
     color: var(--text-color);
 }
-.inputBox .createRoomBtn {
+.inputBox #createRoomBtn {
     width: 100%;
     padding: 10px;
     border-radius: calc(10px - 4px);
@@ -664,12 +664,12 @@
     transition: bottom 0.3s ease, background-color 0.3s ease, scale 0.2s ease;
     cursor: pointer;
 }
-.inputBox .createRoomBtn:hover {
+.inputBox #createRoomBtn:hover {
     background-color: rgb(255,255,255,0.2);
 }
-.inputBox .createRoomBtn:active {
+.inputBox #createRoomBtn:active {
     scale: 0.95;
 }
-.inputBox .createRoomBtn.active {
+.inputBox #createRoomBtn.active {
     background-color: var(--secondary-color);
 }

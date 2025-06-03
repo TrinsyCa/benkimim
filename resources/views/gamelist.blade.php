@@ -74,8 +74,8 @@
                             </div>
                         </div>
                         <div class="inputBox">
-                            <label>Odayı Oluştur</label>
-                            <button type="button" onclick="createGameBtn(this);" class="createRoomBtn">Oyunu Başlat</button>
+                            <label for="createRoomBtn">Odayı Oluştur</label>
+                            <button type="button" onclick="createGameBtn(this);" id="createRoomBtn">Oyunu Başlat</button>
                         </div>
                     </form>
                 </div>

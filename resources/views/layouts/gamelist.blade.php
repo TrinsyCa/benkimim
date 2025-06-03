@@ -676,7 +676,7 @@
                 <div class="gamelist-profile-top">
                     <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User Profile" class="gamelist-profile-picture">
                     <div class="gamelist-profile-details">
-                        <h3>@TrinsyCa</h3>
+                        <h3>TrinsyCa</h3>
                         <p>Oynanan Oyunlar: 3</p>
                     </div>
                 </div>

@@ -3,37 +3,37 @@ document.querySelectorAll('.custom-select').forEach(select => {
     const hiddenInput = select.querySelector('input[name="gameCategory"]');
     const selectBox = select.closest('.selectBox'); // .selectBox'ı bul
 
-    // Dropdown'u aç/kapat
     selectedOption.addEventListener('click', () => {
         select.classList.toggle('openDropdown');
-        selectBox.classList.toggle('active'); // .selectBox'a active sınıfı ekle/kaldır
+        selectBox.classList.toggle('active');
     });
 
-    // Seçeneklere tıklandığında
     select.querySelectorAll('.option').forEach(option => {
         option.addEventListener('click', () => {
             const value = option.getAttribute('data-value');
             const imgSrc = option.querySelector('img').src;
-            const text = option.querySelector('span').textContent;
+            const text = option.querySelector('span');
 
-            // Seçili alanı güncelle
             selectedOption.querySelector('img').src = imgSrc;
-            selectedOption.querySelector('span').textContent = text;
+            selectedOption.querySelector('span').textContent = text.textContent;
+            if(text.getAttribute('font')) {
+                selectedOption.querySelector('span').setAttribute('font', text.getAttribute('font'));
+            }
+            else {
+                selectedOption.querySelector('span').removeAttribute('font');
+            }
 
-            // Gizli input'a değeri yaz
             hiddenInput.value = value;
 
-            // Dropdown'u kapat
             select.classList.remove('openDropdown');
-            selectBox.classList.remove('active'); // .selectBox'tan active kaldır
+            selectBox.classList.remove('active');
         });
     });
 
-    // Dışarı tıklandığında kapat
     document.addEventListener('click', (e) => {
         if (!select.contains(e.target)) {
             select.classList.remove('openDropdown');
-            selectBox.classList.remove('active'); // .selectBox'tan active kaldır
+            selectBox.classList.remove('active');
         }
     });
 });

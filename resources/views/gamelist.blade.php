@@ -13,7 +13,7 @@
                     </button>
                     <h2>Oyun Oluştur</h2>
                     <p>Oyun oluşturmak için lütfen aşağıdaki bilgileri doldurun</p>
-                    <form id="createGameForm" action="{{ url('/play/create') }}" method="POST">
+                    <form id="createGameForm" method="POST">
                         @csrf
                         <div class="inputBox">
                             <label for="gameName">Oda Adı</label>
@@ -53,7 +53,30 @@
                                 <input type="hidden" name="gameCategory" id="gameCategory" value="leagueoflegends">
                             </div>
                         </div>
-                        {{-- <button type="submit" class="create-game-submit">Oyun Oluştur</button> --}}
+                        <div class="inputBox">
+                            <label>Oda Türü</label>
+                            <div class="radio-group">
+                                <input type="radio" name="gameVisibility" value="public" id="public" required checked>
+                                <label for="public">Herkese Açık</label>
+                                <input type="radio" name="gameVisibility" value="private" id="private">
+                                <label for="private">Yalnızca Davetle</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <label>Oyun Süresi</label>
+                            <div class="radio-group">
+                                <input type="radio" name="questTime" value="[questTime-10]" id="[questTime-10]">
+                                <label for="[questTime-10]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1"/></g></svg> 10s</label>
+                                <input type="radio" name="questTime" value="[questTime-20]" id="[questTime-20]" required checked>
+                                <label for="[questTime-20]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1"/></g></svg> 20s</label>
+                                <input type="radio" name="questTime" value="[questTime-30]" id="[questTime-30]">
+                                <label for="[questTime-30]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1"/></g></svg> 30s</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <label>Odayı Oluştur</label>
+                            <button type="button" onclick="createGameBtn(this);" class="createRoomBtn">Oyunu Başlat</button>
+                        </div>
                     </form>
                 </div>
             </div>

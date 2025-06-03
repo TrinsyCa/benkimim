@@ -13,3 +13,9 @@ gamelistTabPlayedGamesBtn.addEventListener('click', () => {
   gamelistTabActivePlaysBtn.classList.remove('active');
   gamelistTabSides.style.translate = `-${gamelistTabSidesContainer.offsetWidth}px 0px`;
 });
+
+function createGameBtn(btnElement) {
+  btnElement.classList.add('active');
+  btnElement.innerText = 'Oyun Başlatılıyor..';
+  gamePasswordBool = true;
+}

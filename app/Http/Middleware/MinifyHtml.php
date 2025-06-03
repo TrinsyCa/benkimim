@@ -17,7 +17,7 @@ class MinifyHtml
     {
         $response = $next($request);
         if ($response instanceof \Illuminate\Http\Response) {
-            $signature = "\n<!-- Created by: Ömer İslamoğlu ~ TrinsyCa ~ https://trinsyca.com -->\n\n";
+            $signature = "\n <!-- Created by: Ömer İslamoğlu ~ TrinsyCa ~ https://trinsyca.com -->\n\n";
             $content = $signature . minify_html($response->getContent());
             $response->setContent($content);
         }

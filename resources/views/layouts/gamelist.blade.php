@@ -739,7 +739,3 @@
         </div>
     </div>
 </div>
-@section('scripts')
-<script src="{{ asset("scripts/gamelist.js") }}"></script>
-<script src="{{ asset("scripts/loadgame.js") }}"></script>
-@endsection

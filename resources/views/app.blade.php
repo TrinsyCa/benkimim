@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}?v={{ filemtime(public_path('styles/app.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}?v={{ filemtime(public_path('styles/navbar.css')) }}">
     <link rel="stylesheet" href="{{ asset('styles/footer.css') }}?v={{ filemtime(public_path('styles/footer.css')) }}">
-    <link rel="stylesheet" href="{{ asset('styles/gamelist.css') }}?v={{ filemtime(public_path('styles/gamelist.css')) }}">
     {{-- Static Styles --}}
 
     {{-- Dynamic Styles --}}

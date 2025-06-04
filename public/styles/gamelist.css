@@ -24,6 +24,9 @@
     position: relative;
     height: 160px;
 }
+.gamelist.createGameActive .playgame-container {
+    height: 100%;
+}
 .playgame-container,
 .game-list-container {
     width: 100%;
@@ -487,6 +490,7 @@
     pointer-events: all;
 } 
 #playButtonSections .create-play-section #createGameForm {
+    margin-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -510,6 +514,7 @@
     padding: 8px 15px;
     background-color: rgb(255,255,255,0.15);
     cursor: pointer;
+    z-index: 1;
 }
 #playButtonSections .create-play-section .backtoGameList svg {
     width: 20px;
@@ -784,4 +789,26 @@
 }
 .game-list-container .gamelist-settings {
     height: 100%;
+}
+.gamelist-container.settings-active #playButtonSections {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+#playButtonSections .createGameTitle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+.gamelist-container.settings-active #playButtonSections .createGameTitle {
+    opacity: 0;
+    top: -100px;
 }

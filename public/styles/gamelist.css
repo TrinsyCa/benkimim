@@ -720,23 +720,25 @@
         top: -100%;
     }
 }
-.gamelist-profile:hover .gamelist-profile-rank p {
+.gamelist-profile:hover .gamelist-profile-rank p,
+.gamelist-profile #gamelistProfileMenu.active p {
     translate: 0 -100%;
 }
 .gamelist-profile:hover #settingsSecBtn {
     top: 0;
     pointer-events: all;
 }
-.gamelist-profile:hover #settingsSecBtn.active {
+.gamelist-profile #gamelistProfileMenu.active #settingsSecBtn {
     top: -100%;
     pointer-events: none;
 }
-.gamelist-profile:hover #settingsSecBtn.active ~ #closeSettingsSecBtn {
+.gamelist-profile #gamelistProfileMenu.active #settingsSecBtnClose,
+.gamelist-profile:hover #gamelistProfileMenu.active #settingsSecBtnClose {
     top: 0;
     pointer-events: all;
 }
 .gamelist-profile #settingsSecBtn,
-.gamelist-profile #closeSettingsSecBtn {
+.gamelist-profile #settingsSecBtnClose {
     pointer-events: none;
     position: absolute;
     top: 100%;
@@ -752,14 +754,14 @@
     transition: background-color 0.3s ease, top 0.3s ease;
 }
 .gamelist-profile #settingsSecBtn span,
-.gamelist-profile #closeSettingsSecBtn  span{
+.gamelist-profile #settingsSecBtnClose  span{
     font-size: 1.2rem;
 }
 .gamelist-profile #settingsSecBtn:hover,
-.gamelist-profile #closeSettingsSecBtn:hover {
+.gamelist-profile #settingsSecBtnClose:hover {
     background-color: rgb(255,255,255,0.2);
 }
 .gamelist-profile #settingsSecBtn:active,
-.gamelist-profile #closeSettingsSecBtn:active {
+.gamelist-profile #settingsSecBtnClose:active {
     background-color: rgb(255,255,255,0.3);
 }

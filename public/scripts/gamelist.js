@@ -19,3 +19,13 @@ function createGameBtn(btnElement) {
   btnElement.querySelector('span').innerText = 'Oyun Başlatılıyor..';
   gamePasswordBool = true;
 }
+
+const gamelistProfileMenu = document.getElementById('gamelistProfileMenu');
+const settingsSecBtn = document.getElementById('settingsSecBtn');
+settingsSecBtn.addEventListener('click', () => {
+  gamelistProfileMenu.classList.add('active');
+});
+const settingsSecBtnClose = document.getElementById('settingsSecBtnClose');
+settingsSecBtnClose.addEventListener('click', () => {
+  gamelistProfileMenu.classList.remove('active');
+});

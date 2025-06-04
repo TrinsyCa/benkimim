@@ -1,5 +1,5 @@
 <div class="gamelist" id="startGameSection">
-    <div class="gamelist-container">
+    <div class="gamelist-container" id="gamelistContainer">
         <div class="playgame-container">
             <div class="playgame-item">
                 <button onclick="joinGameSection(this);" href="{{ url('/play/queue') }}" class="play-button"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#fff" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z"/></svg> <b>Bir Oyuna Katıl</b></span></button>
@@ -669,6 +669,7 @@
                 </div>
             </div>
         </div>
+        {{-- @include('layouts.gamelist.settings') --}}
     </div>
     <div class="gamelist-sidebar">
         <div class="gamelist-profile-menu">

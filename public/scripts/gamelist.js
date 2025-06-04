@@ -20,12 +20,15 @@ function createGameBtn(btnElement) {
   gamePasswordBool = true;
 }
 
+const gamelistContainer = document.getElementById('gamelistContainer');
 const gamelistProfileMenu = document.getElementById('gamelistProfileMenu');
 const settingsSecBtn = document.getElementById('settingsSecBtn');
 settingsSecBtn.addEventListener('click', () => {
   gamelistProfileMenu.classList.add('active');
+  gamelistContainer.classList.add('settings-active');
 });
 const settingsSecBtnClose = document.getElementById('settingsSecBtnClose');
 settingsSecBtnClose.addEventListener('click', () => {
   gamelistProfileMenu.classList.remove('active');
+  gamelistContainer.classList.remove('settings-active');
 });

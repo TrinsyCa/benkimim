@@ -23,12 +23,40 @@ function createGameBtn(btnElement) {
 const gamelistContainer = document.getElementById('gamelistContainer');
 const gamelistProfileMenu = document.getElementById('gamelistProfileMenu');
 const settingsSecBtn = document.getElementById('settingsSecBtn');
+const settingsContainer = document.getElementById('gamelistSettingsContainer');
 settingsSecBtn.addEventListener('click', () => {
   gamelistProfileMenu.classList.add('active');
   gamelistContainer.classList.add('settings-active');
+  settingsContainer.classList.add('activate-settings');
 });
 const settingsSecBtnClose = document.getElementById('settingsSecBtnClose');
 settingsSecBtnClose.addEventListener('click', () => {
   gamelistProfileMenu.classList.remove('active');
   gamelistContainer.classList.remove('settings-active');
+  settingsContainer.classList.remove('activate-settings');
+});
+
+const settingslistTabStatisticsBtn = document.getElementById('settingslistTabStatisticsBtn');
+const settingslistTabEditProfileBtn = document.getElementById('settingslistTabEditProfileBtn');
+const settingslistTabSettingsBtn = document.getElementById('settingslistTabSettingsBtn');
+const settingsTabSidesContainer = document.getElementById('settingsTabSidesContainer');
+const settingsTabSides = document.getElementById('settingsTabSides');
+
+settingslistTabStatisticsBtn.addEventListener('click', () => {
+  settingslistTabEditProfileBtn.classList.remove('active');
+  settingslistTabSettingsBtn.classList.remove('active');
+  settingslistTabStatisticsBtn.classList.add('active');
+  settingsTabSides.style.translate = '0px';
+});
+settingslistTabEditProfileBtn.addEventListener('click', () => {
+  settingslistTabStatisticsBtn.classList.remove('active');
+  settingslistTabSettingsBtn.classList.remove('active');
+  settingslistTabEditProfileBtn.classList.add('active');
+  settingsTabSides.style.translate = `-${settingsTabSidesContainer.offsetWidth}px 0px`;
+});
+settingslistTabSettingsBtn.addEventListener('click', () => {
+  settingslistTabStatisticsBtn.classList.remove('active');
+  settingslistTabEditProfileBtn.classList.remove('active');
+  settingslistTabSettingsBtn.classList.add('active');
+  settingsTabSides.style.translate = `-${settingsTabSidesContainer.offsetWidth * 2}px 0px`;
 });

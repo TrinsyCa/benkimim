@@ -16,19 +16,25 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     overflow: hidden;
     transition: gap 0.3s ease;
 }
 .playgame-container {
     position: relative;
     height: 160px;
+    margin-bottom: 10px;
+    transition: margin-bottom 0.3s ease;
 }
 .gamelist.createGameActive .playgame-container {
     height: 100%;
 }
+.gamelist.createGameActive .playgame-container,
+.gamelist-container.settings-active .playgame-container {
+    margin-bottom: 0;
+}
 .playgame-container,
-.game-list-container {
+.game-list-container,
+.settings-list-container {
     width: 100%;
     background-color: rgb(0, 0, 0, 0.4);
     overflow: hidden;
@@ -169,11 +175,13 @@
     width: 16px;
     height: 16px;
 }
-.game-list-container {
+.game-list-container,
+.settings-list-container {
     position: relative;
     height: 500px;
 }
-.game-list-container::after {
+.game-list-container::after,
+.settings-list-container::after {
     content: '';
     position: absolute;
     left: 0;
@@ -184,7 +192,8 @@
     pointer-events: none;
     border-radius: 20px;
 }
-.game-list-container-table::-webkit-scrollbar {
+.game-list-container-table::-webkit-scrollbar,
+.settings-list-container-table::-webkit-scrollbar {
     width: 0;
 }
 .game-list-container .game-item {
@@ -293,7 +302,8 @@
 .game-item-footer:last-child {
     color: var(--text-color-secondary);
 }
-.game-list-tab-container {
+.game-list-tab-container,
+.settings-list-tab-container {
     width: 100%;
     padding-bottom: 10px;
     display: flex;
@@ -304,29 +314,36 @@
     transition: height 0.3s ease, width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
     overflow: hidden;
 }
-.game-list-tab-sides-container {
+.game-list-tab-sides-container,
+.settings-list-tab-sides-container {
     width: 840px;
     overflow: hidden;
     border-radius: calc(20px - 10px);
     transition: height 0.3s ease, width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
 }
-.game-list-tab-sides {
+.game-list-tab-sides,
+.settings-list-tab-sides {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     transition: translate 0.5s ease-in-out;
 }
-.game-list-container-table {
+.game-list-container-table,
+.settings-list-container-table {
     min-width: 840px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: calc(700px - (15px * 2) - 170px - 60px);
+    height: calc(700px - (15px * 2) - 170px - 68px);
     overflow: auto;
     border-radius: calc(20px - 10px);
 }
-.game-list-tab-container button {
+.settings-list-container-table {
+    height: 100%;
+}
+.game-list-tab-container button,
+.settings-list-tab-container button {
     background-color: rgb(255,255,255,0.15);
     border: 0;
     width: 100%;
@@ -339,19 +356,23 @@
     font-weight: 500;
     border-radius: calc(20px - 10px);
     transition: background-color 0.3s ease, color 0.3s ease, scale 0.2s ease-in-out;
-    padding: 5px;
+    padding: 8px;
     outline: 0;
     cursor: pointer;
 }
 .game-list-tab-container button:hover,
-.game-list-tab-container button:active {
+.game-list-tab-container button:active,
+.settings-list-tab-container button:hover,
+.settings-list-tab-container button:active {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
-.game-list-tab-container button:active {
+.game-list-tab-container button:active,
+.settings-list-tab-container button:active {
     scale: 0.96;
 }
-.game-list-tab-container button.active {
+.game-list-tab-container button.active,
+.settings-list-tab-container button.active {
     background-color: var(--primary-color);
     color: var(--text-color);
     pointer-events: none;
@@ -811,4 +832,14 @@
 .gamelist-container.settings-active #playButtonSections .createGameTitle {
     opacity: 0;
     top: -100px;
+}
+.settings-list-container {
+    height: 0;
+    padding: 0;
+    pointer-events: none;
+}
+.settings-list-container.activate-settings {
+    height: 100%;
+    padding: 10px;
+    pointer-events: all;
 }

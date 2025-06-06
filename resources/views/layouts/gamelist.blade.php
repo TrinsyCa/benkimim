@@ -677,10 +677,12 @@
         <div class="gamelist-profile-menu">
             <div class="gamelist-profile">
                 <div class="gamelist-profile-top">
-                    <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User Profile" class="gamelist-profile-picture">
+                    <div class="gamelist-profile-picture">
+                        <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User Profile">
+                    </div>
                     <div class="gamelist-profile-details">
                         <h3>TrinsyCa</h3>
-                        <p>Oynanan Oyunlar: 3</p>
+                        <p><img src="{{ asset('assets/images/rank/quest.png') }}"><span>Oyun Gurmesi</span></p>
                     </div>
                 </div>
                 <div class="gamelist-profile-rank-container">

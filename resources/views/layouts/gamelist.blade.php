@@ -675,7 +675,7 @@
     </div>
     <div class="gamelist-sidebar">
         <div class="gamelist-profile-menu">
-            <div class="gamelist-profile">
+            <div class="gamelist-profile" id="gamelistProfile">
                 <div class="gamelist-profile-top">
                     <div class="gamelist-profile-picture">
                         <img src="{{ asset('assets/images/users/profilepic/user-1.webp') }}?v={{ filemtime(public_path('assets/images/users/profilepic/user-1.webp')) }}" alt="User Profile">

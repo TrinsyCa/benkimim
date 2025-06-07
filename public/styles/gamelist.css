@@ -404,7 +404,8 @@
     gap: 12px;
 }
 .gamelist-profile:hover,
-.gamelist-profile:active {
+.gamelist-profile:active,
+.gamelist-profile.settings-active {
     background-color: var(--primary-color);
 }
 .gamelist-profile-details {

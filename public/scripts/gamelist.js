@@ -24,16 +24,19 @@ const gamelistContainer = document.getElementById('gamelistContainer');
 const gamelistProfileMenu = document.getElementById('gamelistProfileMenu');
 const settingsSecBtn = document.getElementById('settingsSecBtn');
 const settingsContainer = document.getElementById('gamelistSettingsContainer');
+const gamelistProfile = document.getElementById('gamelistProfile');
 settingsSecBtn.addEventListener('click', () => {
   gamelistProfileMenu.classList.add('active');
   gamelistContainer.classList.add('settings-active');
   settingsContainer.classList.add('activate-settings');
+  gamelistProfile.classList.add('settings-active');
 });
 const settingsSecBtnClose = document.getElementById('settingsSecBtnClose');
 settingsSecBtnClose.addEventListener('click', () => {
   gamelistProfileMenu.classList.remove('active');
   gamelistContainer.classList.remove('settings-active');
   settingsContainer.classList.remove('activate-settings');
+  gamelistProfile.classList.remove('settings-active');
 });
 
 const settingslistTabStatisticsBtn = document.getElementById('settingslistTabStatisticsBtn');

@@ -7,12 +7,12 @@
     <div class="settings-list-tab-sides-container" id="settingsTabSidesContainer">
         <div class="settings-list-tab-sides" id="settingsTabSides">
             <div class="settings-list-container-table">
-                <div class="profile-statics">
-                    <div class="profile-statics-container">
-                        <div class="profile-statics-picture">
+                <div class="profile-topbar">
+                    <div class="profile-topbar-container">
+                        <div class="profile-topbar-picture">
                             <img  src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="user-1">
                         </div>
-                        <div class="profile-statics-info">
+                        <div class="profile-topbar-info">
                             <h1>TrinsyCa</h1>
                             <div class="profile-quest">
                                 <div class="profile-quest-container">
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-statics-social">
+                            <div class="profile-topbar-social">
                                 <div class="profile-short-settings">
                                     <button>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" fill="none"/><g fill="currentColor"><circle cx="5" cy="10" r="2"/><circle cx="10" cy="10" r="2"/><circle cx="15" cy="10" r="2"/></g></svg>
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile-statics-sidebar">
+                    <div class="profile-topbar-sidebar">
                         <div class="profile-elo">
                             <div class="profile-elo-content">
                                 <img src="{{ asset('assets/images/rank/diamond.webp') }}" alt="Elmas Elo">

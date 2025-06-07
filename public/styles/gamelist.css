@@ -414,13 +414,13 @@
     gap: 8px;
 }
 .gamelist-profile-details p,
-.profile-statics-info p {
+.profile-topbar-info p {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 .gamelist-profile-details p img,
-.profile-statics-info p img {
+.profile-topbar-info p img {
     width: 18px;
     height: 18px;
     object-fit: contain;
@@ -879,7 +879,7 @@
     border-radius: 6px;
     padding: 5px;
 }
-.profile-statics {
+.profile-topbar {
     width: 100%;
     display: flex;
     gap: 10px;
@@ -887,12 +887,12 @@
     border-radius: calc(20px - 10px);
     padding: 10px;
 }
-.profile-statics-container {
+.profile-topbar-container {
     width: 100%;
     display: flex;
     gap: 10px;
 }
-.profile-statics-container .profile-statics-picture {
+.profile-topbar-container .profile-topbar-picture {
     background: var(--profile-pic-bg);
     padding: 3px;
     border-radius: 50%;
@@ -901,30 +901,30 @@
     justify-content: center;
     align-items: center;
 }
-.profile-statics-container .profile-statics-picture img {
+.profile-topbar-container .profile-topbar-picture img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
-.profile-statics-info {
+.profile-topbar-info {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.profile-statics-info h1 {
+.profile-topbar-info h1 {
     font-size: 1.5rem;
     margin: 0;
 }
-.profile-statics-info .profile-quest {
+.profile-topbar-info .profile-quest {
     position: relative;
     width: fit-content;
 }
-.profile-statics-info .profile-quest>.profile-quest-container {
+.profile-topbar-info .profile-quest>.profile-quest-container {
     cursor: pointer;
 }
-.profile-statics-info .profile-quest .profile-quest-container {
+.profile-topbar-info .profile-quest .profile-quest-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -934,19 +934,19 @@
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
-.profile-statics-info .profile-quest>.profile-quest-container:hover {
+.profile-topbar-info .profile-quest>.profile-quest-container:hover {
     background-color: rgb(255,255,255,0.2);
 }
-.profile-statics-info .profile-quest>.profile-quest-container span {
+.profile-topbar-info .profile-quest>.profile-quest-container span {
     font-size: 1.2rem;
 }
-.profile-statics-info .profile-quest .profile-quest-container img {
+.profile-topbar-info .profile-quest .profile-quest-container img {
     width: 20px;
     height: 20px;
     object-fit: contain;
     object-position: center;
 }
-.profile-statics-info .profile-quest .profile-quest-details {
+.profile-topbar-info .profile-quest .profile-quest-details {
     position: absolute;
     top: -22px;
     left: 100%;
@@ -955,30 +955,30 @@
     transition: opacity 0.3s ease, padding-left 0.3s ease;
     z-index: 10;
 }
-.profile-statics-info .profile-quest .profile-quest-details .profile-quest-details-content {
+.profile-topbar-info .profile-quest .profile-quest-details .profile-quest-details-content {
     padding: 12px;
     border-radius: 22px;
     background: linear-gradient(135deg, #4f3b61, #4c385a);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 250px;
 }
-.profile-statics-info .profile-quest .profile-quest-details .profile-quest-details-content p {
+.profile-topbar-info .profile-quest .profile-quest-details .profile-quest-details-content p {
     margin-top: 8px;
     color: var(--text-color-secondary);
     font-size: 0.9rem;
 }
-.profile-statics-info .profile-quest:hover .profile-quest-details {
+.profile-topbar-info .profile-quest:hover .profile-quest-details {
     opacity: 1;
     padding-left: 10px;
     pointer-events: all;
 }
-.profile-statics-social {
+.profile-topbar-social {
     margin-top: 8px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.profile-statics-social a {
+.profile-topbar-social a {
     position: relative;
     width: 30px;
     height: 30px;
@@ -986,7 +986,7 @@
     justify-content: center;
     align-items: center;
 }
-.profile-statics-social a .profile-social-link {
+.profile-topbar-social a .profile-social-link {
     position: absolute;
     top: calc(100% + 7px);
     left: 50%;
@@ -999,26 +999,26 @@
     border-radius: 50px;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.profile-statics-social a:hover .profile-social-link {
+.profile-topbar-social a:hover .profile-social-link {
     opacity: 1;
     transform: translateX(-50%) scale(1);
     pointer-events: all;
 }
-.profile-statics-social a:active .profile-social-link {
+.profile-topbar-social a:active .profile-social-link {
     transform: translateX(-50%) scale(1.15);
 }
-.profile-statics-social a svg {
+.profile-topbar-social a svg {
     width: 30px;
     height: 30px;
     transition: scale 0.2s ease;
 }
-.profile-statics-social a:hover svg {
+.profile-topbar-social a:hover svg {
     scale: 1.15;
 }
-.profile-statics-social a:active svg {
+.profile-topbar-social a:active svg {
     scale: 0.9;
 }
-.profile-statics-sidebar {
+.profile-topbar-sidebar {
     position: relative;
     height: 100%;
     display: flex;

@@ -6,7 +6,7 @@
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('styles/home.css') }}?v={{ filemtime(public_path('styles/home.css')) }}">
-    @vite('resources/css/gamelist.css')
+    <link rel="stylesheet" href="{{ asset('resources/css/gamelist.css') }}?v={{ filemtime(public_path('resources/css/gamelist.css')) }}">
 @endsection
 
 @section('content')

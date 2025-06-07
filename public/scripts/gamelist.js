@@ -63,3 +63,30 @@ settingslistTabSettingsBtn.addEventListener('click', () => {
   settingslistTabSettingsBtn.classList.add('active');
   settingsTabSides.style.translate = `-${settingsTabSidesContainer.offsetWidth * 2}px 0px`;
 });
+
+const profileDotsBtn = document.getElementById('profileDotsBtn');
+const profileDotsContainer = document.getElementById('profileDotsContainer');
+
+profileDotsBtn.addEventListener('click', () => {
+  profileDotsBtn.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+  if (
+    !profileDotsBtn.contains(e.target) &&
+    !profileDotsContainer.contains(e.target)
+  ) {
+    profileDotsBtn.classList.remove('active');
+  }
+  const profileSocialLinks = document.querySelectorAll('.profile-social-link-container');
+  if(profileDotsBtn.classList.contains('active')) {
+    profileSocialLinks.forEach((link) => {
+      link.classList.add('dots-container-active')
+    });
+  }
+  else if (!profileDotsBtn.classList.contains('active')) {
+    profileSocialLinks.forEach((link) => {
+      link.classList.remove('dots-container-active')
+    });
+  }
+});

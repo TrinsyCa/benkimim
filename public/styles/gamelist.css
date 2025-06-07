@@ -945,6 +945,9 @@
     gap: 10px;
 }
 .profile-topbar-container .profile-topbar-picture {
+    position: relative;
+    width: 125px;
+    height: 125px;
     background: var(--profile-pic-bg);
     padding: 3px;
     border-radius: 50%;
@@ -953,9 +956,32 @@
     justify-content: center;
     align-items: center;
 }
+.profile-picture-camera {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    background-color: rgb(255,255,255,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.2s ease;
+    border-radius: 50%;
+    pointer-events: none;
+    cursor: pointer;
+}
+.profile-topbar-container .profile-topbar-picture:hover .profile-picture-camera {
+    opacity: 1;
+    pointer-events: all;
+}
+.profile-picture-camera:active {
+    background-color: rgb(255,255,255,0.35);
+}
 .profile-topbar-container .profile-topbar-picture img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -1031,7 +1057,8 @@
     align-items: center;
     gap: 8px;
 }
-.profile-topbar-social a {
+.profile-topbar-social a,
+.profile-dots {
     position: relative;
     width: 30px;
     height: 30px;
@@ -1039,7 +1066,11 @@
     justify-content: center;
     align-items: center;
 }
-.profile-topbar-social a .profile-social-link {
+.profile-topbar-social a.profile-social-link-container.dots-container-active {
+    pointer-events: none;
+}
+.profile-topbar-social a .profile-social-link,
+.profile-dots .profile-dots-container {
     position: absolute;
     top: calc(100% + 7px);
     left: 50%;
@@ -1051,6 +1082,61 @@
     padding: 6px 12px;
     border-radius: 50px;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+}
+.profile-dots .profile-dots-container {
+    left: 0;
+    transform: translateX(0) scale(0);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid rgb(255,255,255,0.25);
+}
+.profile-dots.active .profile-dots-container {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    pointer-events: all;
+}
+.profile-dots .profile-dots-container button {
+    padding: 6px 12px;
+    white-space: nowrap;
+    background-color: rgb(255,255,255,0.2);
+    border-bottom: 2px solid rgb(255,255,255,0.15);
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    text-shadow: 0 0 5px rgba(255,255,255, 0.2);
+}
+.profile-dots .profile-dots-container button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.profile-dots .profile-dots-container button svg {
+    width: 20px;
+    height: 20px;
+}
+.clr-red,
+.clr-red path {
+    color: rgb(173, 47, 47);
+}
+.profile-dots .profile-dots-container button:last-child {
+    border-bottom: 2px solid transparent;
+}
+.profile-dots .profile-dots-container button:hover {
+    background-color: rgb(255,255,255,0.3);
+    border-bottom: 2px solid transparent;
+}
+.profile-dots .profile-dots-container button:active {
+    border-bottom: 2px solid transparent;
+}
+.profile-dots .profile-dots-container button span {
+    transition: scale 0.2s ease;
+}
+.profile-dots .profile-dots-container button:active span {
+    scale: 0.85;
 }
 .profile-topbar-social a:hover .profile-social-link {
     opacity: 1;
@@ -1079,7 +1165,7 @@
     padding-right: 10px;
     transition: padding-right 0.3s ease;
 }
-.profile-short-settings button {
+.profile-short-settings .profile-dots {
     width: 30px;
     height: 30px;
     display: flex;
@@ -1093,11 +1179,12 @@
     scale: 1;
     transition: background-color 0.3s ease;
 }
-.profile-short-settings button:hover {
-    background-color: rgb(255,255,255,0.2);
+.profile-short-settings .profile-dots:hover {
+    background-color: rgb(255,255,255,0.25);
 }
-.profile-short-settings button:active {
-    background-color: rgb(255,255,255,0.3);
+.profile-short-settings .profile-dots:active,
+.profile-short-settings .profile-dots.active {
+    background-color: rgb(255,255,255,0.35);
 }
 .profile-elo {
     position: relative;

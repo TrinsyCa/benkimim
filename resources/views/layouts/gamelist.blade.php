@@ -52,7 +52,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" name="gameCategory" id="gameCategory" value="leagueoflegends">
+                                <input type="hidden" name="gameCategory" class="hiddenSelectValue" value="leagueoflegends">
                             </div>
                         </div>
                         <div class="inputBox">
@@ -682,7 +682,7 @@
                     </div>
                     <div class="gamelist-profile-details">
                         <h3>TrinsyCa</h3>
-                        <p><img src="{{ asset('assets/images/rank/quest.png') }}"><span>Oyun Gurmesi</span></p>
+                        <p class="profileQuestTrigger"><img src="{{ asset('assets/images/rank/quest.webp') }}"><span>Oyun Gurmesi</span></p>
                     </div>
                 </div>
                 <div class="gamelist-profile-rank-container">

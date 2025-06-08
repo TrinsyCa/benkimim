@@ -1,7 +1,7 @@
 document.querySelectorAll('.custom-select').forEach(select => {
     const selectedOption = select.querySelector('.selected-option');
-    const hiddenInput = select.querySelector('input[name="gameCategory"]');
-    const selectBox = select.closest('.selectBox'); // .selectBox'ı bul
+    const hiddenInput = select.querySelector('input.hiddenSelectValue');
+    const selectBox = select.closest('.selectBox');
 
     selectedOption.addEventListener('click', () => {
         select.classList.toggle('openDropdown');
@@ -11,11 +11,9 @@ document.querySelectorAll('.custom-select').forEach(select => {
     select.querySelectorAll('.option').forEach(option => {
         option.addEventListener('click', () => {
             const value = option.getAttribute('data-value');
-            const imgSrc = option.querySelector('img').src;
             const text = option.querySelector('span');
 
-            selectedOption.querySelector('img').src = imgSrc;
-            selectedOption.querySelector('span').textContent = text.textContent;
+            selectedOption.innerHTML = option.innerHTML;
             if(text.getAttribute('font')) {
                 selectedOption.querySelector('span').setAttribute('font', text.getAttribute('font'));
             }
@@ -24,6 +22,21 @@ document.querySelectorAll('.custom-select').forEach(select => {
             }
 
             hiddenInput.value = value;
+
+            if(select.classList.contains('questSelectTrigger')) {
+                const profileQuestTrigger = document.querySelectorAll('.profileQuestTrigger');
+                profileQuestTrigger.forEach((trigger) => {
+                    const triggerText = option.querySelector('span');
+
+                    trigger.innerHTML = option.innerHTML;
+                    if(triggerText.getAttribute('font')) {
+                        selectedOption.querySelector('span').setAttribute('font', text.getAttribute('font'));
+                    }
+                    else {
+                        selectedOption.querySelector('span').removeAttribute('font');
+                    }
+                });
+            }
 
             select.classList.remove('openDropdown');
             selectBox.classList.remove('active');

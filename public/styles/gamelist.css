@@ -410,9 +410,11 @@
     gap: 5px;
 }
 .gamelist-profile-details p img,
-.profile-topbar-info p img {
-    width: 18px;
-    height: 18px;
+.gamelist-profile-details p svg,
+.profile-topbar-info p img,
+.profile-topbar-info p svg {
+    width: 22px;
+    height: 22px;
     object-fit: contain;
     object-position: center;
 }
@@ -560,7 +562,7 @@
 #playButtonSections .create-play-section .backtoGameList:active {
     scale: 0.85;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox {
+.inputBox {
     width: 400px;
     background-color: rgb(255,255,255,0.15);
     border-radius: 10px;
@@ -570,22 +572,23 @@
     padding: 4px;
     transition: background 0.3s ease, border-radius 0.3s ease; /* Animasyon için */
 }
-#playButtonSections .create-play-section #createGameForm .inputBox input,
-#playButtonSections .create-play-section #createGameForm .inputBox .custom-select,
-#playButtonSections .create-play-section #createGameForm .inputBox .radio-group label,
-#playButtonSections .create-play-section #createGameForm .inputBox #createRoomBtn {
+.inputBox input,
+.inputBox .custom-select,
+.inputBox .radio-group label,
+.inputBox #createRoomBtn {
     height: 44px;
 }
 
-#playButtonSections .create-play-section #createGameForm .inputBox.active {
+.inputBox.active {
     background-color: rgb(255,255,255,0.25);
     border-radius: 10px 10px 0 0;
 }
-#playButtonSections .create-play-section #createGameForm label {
+.inputBox label {
     padding: 8px;
+    white-space: nowrap;
 }
-#playButtonSections .create-play-section #createGameForm input,
-#playButtonSections .create-play-section #createGameForm select {
+.inputBox input,
+.inputBox select {
     background-color: rgb(255,255,255,0.1);
     padding: 8px 15px;
     border-radius: calc(10px - 4px);
@@ -594,17 +597,17 @@
     border: 1px solid transparent;
     transition: border 0.2s ease;
 }
-#playButtonSections .create-play-section #createGameForm input[readonly] {
+input[readonly] {
     pointer-events: none;
 }
-#playButtonSections .create-play-section #createGameForm select:focus {
+.inputBox select:focus {
     border: 1px solid rgb(255,255,255,0.5);
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .custom-select {
+.inputBox .custom-select {
     position: relative;
     width: 100%;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .selected-option {
+.inputBox .selected-option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,13 +617,16 @@
     cursor: pointer;
     transition: background 0.3s ease;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .option-image {
+.inputBox .selected-option img,
+.inputBox .selected-option svg,
+.inputBox .option img,
+.inputBox .option svg {
     width: 24px;
     height: 24px;
     margin-right: 8px;
     object-fit: contain;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .options {
+.inputBox .options {
     position: absolute;
     top: calc(100% + 6px);
     left: 0;
@@ -634,26 +640,26 @@
     outline: 4px solid #775E83;
     transition: opacity 0.3s ease;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .options .options-container {
+.inputBox .options .options-container {
     border-radius: calc(10px - 4px);
     overflow-y: auto;
     height: 0;
     transition: height 0.3s ease;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .options .options-container::-webkit-scrollbar {
+.inputBox .options .options-container::-webkit-scrollbar {
     width: 0;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .options {
+.inputBox .custom-select.openDropdown .options {
     pointer-events: all;
     opacity: 1;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .options .options-container {
+.inputBox .custom-select.openDropdown .options .options-container {
     height: 132px;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .custom-select.openDropdown .selected-option {
+.inputBox .custom-select.openDropdown .selected-option {
     background: rgb(255,255,255,0.3);
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .option {
+.inputBox .option {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -661,8 +667,22 @@
     border-radius: calc(10px - 4px);
     transition: background 0.3s ease;
 }
-#playButtonSections .create-play-section #createGameForm .inputBox .option:hover {
+.inputBox .option:hover {
     background: rgb(255,255,255,0.3);
+}
+.inputBox.selectBox.rectangle {
+    flex-direction: row;
+    align-items: center;
+}
+.inputBox.selectBox.rectangle.active {
+    border-radius: 10px 10px 0 10px;
+}
+.inputBox.selectBox.rectangle .selected-option,
+.inputBox.selectBox.rectangle .option {
+    padding: 5px;
+}
+.inputBox.selectBox.rectangle .custom-select {
+    height: 35px;
 }
 .inputBox .radio-group {
     display: flex;
@@ -1019,7 +1039,8 @@
 .profile-topbar-info .profile-quest>.profile-quest-container span {
     font-size: 1.2rem;
 }
-.profile-topbar-info .profile-quest .profile-quest-container img {
+.profile-topbar-info .profile-quest .profile-quest-container img,
+.profile-topbar-info .profile-quest .profile-quest-container svg {
     width: 20px;
     height: 20px;
     object-fit: contain;
@@ -1234,4 +1255,30 @@
     opacity: 1;
     transform: translateX(-50%) scale(1);
     pointer-events: all;
+}
+.editProfileTable .profile-topbar-sidebar {
+    display: flex;
+    align-items: start;
+    padding-right: 0;
+}
+.editProfileTable .profile-topbar-sidebar #saveProfile {
+    padding: 6px 12px;
+    background-color: rgb(255,255,255,0.25);
+    border: 1px solid rgb(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.2s ease;
+}
+.editProfileTable .profile-topbar-sidebar #saveProfile span {
+    font-size: 1.1rem;
+}
+.editProfileTable .profile-topbar-sidebar #saveProfile:hover,
+.editProfileTable .profile-topbar-sidebar #saveProfile:active {
+    background-color: rgb(255,255,255,0.35);
+}
+.editProfileTable .profile-topbar-sidebar #saveProfile:active {
+    scale: 0.9;
 }

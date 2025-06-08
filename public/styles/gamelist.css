@@ -564,7 +564,7 @@
 }
 .inputBox {
     width: 400px;
-    background-color: rgb(255,255,255,0.15);
+    background-color: #634973;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -580,7 +580,7 @@
 }
 
 .inputBox.active {
-    background-color: rgb(255,255,255,0.25);
+    background-color: #775E83;
     border-radius: 10px 10px 0 0;
 }
 .inputBox label {
@@ -631,7 +631,7 @@ input[readonly] {
     top: calc(100% + 6px);
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, #725C82, #735C81);
+    background: #775E83;
     border-radius: 0 0 calc(10px - 4px) calc(10px - 4px);
     margin-top: 2px;
     z-index: 10;

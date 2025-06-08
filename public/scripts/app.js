@@ -21,7 +21,9 @@ document.querySelectorAll('.custom-select').forEach(select => {
                 selectedOption.querySelector('span').removeAttribute('font');
             }
 
-            hiddenInput.value = value;
+            if(hiddenInput && value) {
+                hiddenInput.value = value;
+            }
 
             if(select.classList.contains('questSelectTrigger')) {
                 const profileQuestTrigger = document.querySelectorAll('.profileQuestTrigger');

@@ -670,9 +670,14 @@ input[readonly] {
 .inputBox .option:hover {
     background: rgb(255,255,255,0.3);
 }
-.inputBox.selectBox.rectangle {
+.inputBox.selectBox.rectangle .rectangle-container {
+    display: flex;
     flex-direction: row;
     align-items: center;
+}
+.inputBox.selectBox.rectangle input {
+    margin-top: 5px;
+    height: 35px;
 }
 .inputBox.selectBox.rectangle.active {
     border-radius: 10px 10px 0 10px;

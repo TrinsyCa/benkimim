@@ -57,6 +57,7 @@ footer * {
     font-style: normal;
 }
 *[font="leagueoflegends"] {
+    letter-spacing: 0;
     font-family: 'leagueoflegends', Arial, sans-serif;
     letter-spacing: 1px;
 }
@@ -68,6 +69,7 @@ footer * {
     font-style: normal;
 }
 *[font="valorant"] {
+    letter-spacing: 0;
     font-family: 'valorant', Arial, sans-serif;
 }
 
@@ -78,6 +80,7 @@ footer * {
     font-style: normal;
 }
 *[font="netflix"] {
+    letter-spacing: 0;
     font-family: 'netflix', Arial, sans-serif;
     letter-spacing: 2px;
     font-size: 1.3rem;
@@ -92,6 +95,7 @@ footer * {
     font-style: normal;
 }
 *[font="marvel"] {
+    letter-spacing: 0;
     font-family: 'marvel', Arial, sans-serif;
     letter-spacing: 1px;
     font-size: 1.3rem;

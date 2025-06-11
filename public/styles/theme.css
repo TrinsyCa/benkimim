@@ -35,6 +35,7 @@
     font-style: normal;
 }
 * {
+    letter-spacing: 1px;
     font-family: 'Inter Italic', Arial, sans-serif;
     font-size: 1rem;
     color: var(--text-color);

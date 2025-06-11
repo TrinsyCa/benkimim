@@ -17,8 +17,8 @@
     --crow: #0d0907;
 }
 @font-face {
-    font-family: 'MaikyRetroDemoRegular';
-    src: url('/assets/fonts/MaikyRetroDemoRegular-vnO64.otf') format('opentype');
+    font-family: 'Integral CF';
+    src: url('/assets/fonts/Integral-CF/integralcf-extraboldoblique.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +44,7 @@ footer * {
     font-family: 'Inter Normal', Arial, sans-serif;
 }
 .font-logo {
-    font-family: 'MaikyRetroDemoRegular', Arial, sans-serif;
+    font-family: 'Integral CF', Arial, sans-serif;
     font-size: 1.5rem;
 }
 

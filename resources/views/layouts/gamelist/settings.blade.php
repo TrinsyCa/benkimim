@@ -228,7 +228,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="inputBox selectBox rectangle">
+                            <div class="inputBox selectBox rectangle hasInputList">
                                 <div class="rectangle-container">
                                     <label>Sosyal Medya</label>
                                     <div class="custom-select">
@@ -268,7 +268,8 @@
                                 </div>
                                 <input type="hidden" class="hiddenSelectValue">
                                 <div class="selectInputs">
-                                @for ($social_id = 0; $social_id < 6; $social_id++)
+                                <input class="active" type="text" name="social-0">
+                                @for ($social_id = 1; $social_id < 6; $social_id++)
                                     <input type="text" name="social-<?php echo $social_id; ?>">
                                 @endfor
                                 </div>

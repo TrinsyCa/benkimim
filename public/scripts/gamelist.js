@@ -90,3 +90,23 @@ document.addEventListener('click', (e) => {
     });
   }
 });
+
+const selectBoxes = document.querySelectorAll('.inputBox.selectBox');
+selectBoxes.forEach((selectBox) => {
+  const selectOptions = selectBox.querySelectorAll('.options .option');
+  selectOptions.forEach((option) => {
+    option.addEventListener('click', (e) => {
+      const selectInputs = selectBox.querySelectorAll('.selectInputs input');
+      selectInputs.forEach((input) => {
+        if(input.getAttribute('name') === option.getAttribute('data-value')) {
+          setTimeout(() => {
+            input.classList.add('active');
+          }, 150);
+        }
+        else {
+          input.removeAttribute('class');
+        }
+      });
+    });
+  });
+});

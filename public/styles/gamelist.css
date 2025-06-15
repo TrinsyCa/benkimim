@@ -138,7 +138,7 @@
     object-fit: contain;
     object-position: center;
 }
-.gamelist-category .game-logo.rectangle {
+.gamelist-category .game-logo.vertical {
     width: auto;
 }
 .gamelist-category-title {
@@ -232,7 +232,7 @@
     width: fit-content;
     margin: 5px 0;
 }
-.game-list-container .game-item .game-item-rectangle {
+.game-list-container .game-item .game-item-vertical {
     width: 150px;
     height: 85px;
     object-fit: contain;
@@ -242,8 +242,8 @@
     background-color: rgb(255,255,255,0.1);
     transition: background-color 0.3s ease, height 0.2s ease, width 0.2s ease;
 }
-.game-list-container .game-item:hover .game-item-rectangle,
-.game-list-container .game-item:active .game-item-rectangle {
+.game-list-container .game-item:hover .game-item-vertical,
+.game-list-container .game-item:active .game-item-vertical {
     background-color: var(--primary-color);
     width: 220px;
 }
@@ -673,32 +673,32 @@ input[readonly] {
 .inputBox .option:hover {
     background: rgb(255,255,255,0.3);
 }
-.inputBox.vertical,
-.inputBox.vertical .vertical-container {
+.inputBox.horizontal,
+.inputBox.horizontal .horizontal-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-.inputBox.rectangle .rectangle-container {
+.inputBox.vertical .vertical-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.inputBox.rectangle input {
+.inputBox.vertical input {
     height: 35px;
 }
-.inputBox.selectBox.rectangle input {
+.inputBox.selectBox.vertical input {
     margin-top: 5px;
 }
-.inputBox.selectBox.vertical.active:not(.hasInputList),
-.inputBox.selectBox.rectangle.active:not(.hasInputList) {
+.inputBox.selectBox.horizontal.active:not(.hasInputList),
+.inputBox.selectBox.vertical.active:not(.hasInputList) {
     border-radius: 10px 10px 0 10px;
 }
+.inputBox.selectBox.horizontal .selected-option,
+.inputBox.selectBox.horizontal .option,
 .inputBox.selectBox.vertical .selected-option,
-.inputBox.selectBox.vertical .option,
-.inputBox.selectBox.rectangle .selected-option,
-.inputBox.selectBox.rectangle .option {
+.inputBox.selectBox.vertical .option {
     padding: 5px;
 }
 .inputBox.selectBox .custom-select,
@@ -1315,7 +1315,7 @@ input[readonly] {
     width: 100%;
     height: 36px;
 }
-.inputBox.selectBox.rectangle .selectInputs {
+.inputBox.selectBox.vertical .selectInputs {
     margin-top: 5px;
 }
 .inputBox.selectBox .selectInputs input {

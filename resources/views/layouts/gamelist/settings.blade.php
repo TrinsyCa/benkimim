@@ -183,7 +183,12 @@
                             <img  src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="user-1">
                         </div>
                         <div class="profile-topbar-info">
-                            <h1>TrinsyCa</h1>
+                            <div class="inputBox rectangle">
+                                <div class="rectangle-container">
+                                    <label for="username">Kullanıcı Adı</label>
+                                    <input type="text" id="username" name="username" value="TrinsyCa" required>
+                                </div>
+                            </div>
                             <div class="inputBox selectBox rectangle">
                                 <div class="rectangle-container">
                                     <label>Rozet</label>
@@ -228,8 +233,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="inputBox selectBox rectangle hasInputList">
-                                <div class="rectangle-container">
+                            <div class="inputBox selectBox vertical hasInputList">
+                                <div class="vertical-container">
                                     <label>Sosyal Medya</label>
                                     <div class="custom-select">
                                         <div class="selected-option">

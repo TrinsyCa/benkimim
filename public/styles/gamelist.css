@@ -579,8 +579,10 @@
     height: 44px;
 }
 
-.inputBox.active:not(.hasInputList) {
+.inputBox.active {
     background-color: #775E83;
+}
+.inputBox.active:not(.hasInputList) {
     border-radius: 10px 10px 0 0;
 }
 .inputBox label {
@@ -608,6 +610,7 @@ input[readonly] {
     width: 100%;
 }
 .inputBox .selected-option {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -670,24 +673,38 @@ input[readonly] {
 .inputBox .option:hover {
     background: rgb(255,255,255,0.3);
 }
-.inputBox.selectBox.rectangle .rectangle-container {
+.inputBox.vertical,
+.inputBox.vertical .vertical-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.inputBox.rectangle .rectangle-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.inputBox.selectBox.rectangle input {
-    margin-top: 5px;
+.inputBox.rectangle input {
     height: 35px;
 }
+.inputBox.selectBox.rectangle input {
+    margin-top: 5px;
+}
+.inputBox.selectBox.vertical.active:not(.hasInputList),
 .inputBox.selectBox.rectangle.active:not(.hasInputList) {
     border-radius: 10px 10px 0 10px;
 }
+.inputBox.selectBox.vertical .selected-option,
+.inputBox.selectBox.vertical .option,
 .inputBox.selectBox.rectangle .selected-option,
 .inputBox.selectBox.rectangle .option {
     padding: 5px;
 }
-.inputBox.selectBox.rectangle .custom-select {
-    height: 35px;
+.inputBox.selectBox .custom-select,
+.inputBox.selectBox .custom-select {
+    min-width: 135px;
+    height: 36px;
 }
 .inputBox .radio-group {
     display: flex;
@@ -973,6 +990,7 @@ input[readonly] {
     position: relative;
     width: 125px;
     height: 125px;
+    aspect-ratio: 1 / 1;
     background: var(--profile-pic-bg);
     padding: 3px;
     border-radius: 50%;
@@ -1015,6 +1033,10 @@ input[readonly] {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 100%;
+}
+.profile-topbar-info .inputBox {
+    width: 100%;
 }
 .profile-topbar-info h1 {
     font-size: 1.5rem;
@@ -1267,6 +1289,7 @@ input[readonly] {
     padding-right: 0;
 }
 .editProfileTable .profile-topbar-sidebar #saveProfile {
+    height: 100%;
     padding: 6px 12px;
     background-color: rgb(255,255,255,0.25);
     border: 1px solid rgb(255,255,255,0.15);
@@ -1289,7 +1312,10 @@ input[readonly] {
 }
 .inputBox.selectBox .selectInputs {
     position: relative;
-    height: 35px;
+    width: 100%;
+    height: 36px;
+}
+.inputBox.selectBox.rectangle .selectInputs {
     margin-top: 5px;
 }
 .inputBox.selectBox .selectInputs input {

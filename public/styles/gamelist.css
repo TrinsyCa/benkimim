@@ -138,7 +138,7 @@
     object-fit: contain;
     object-position: center;
 }
-.gamelist-category .game-logo.vertical {
+.gamelist-category .game-logo.rectangle {
     width: auto;
 }
 .gamelist-category-title {
@@ -232,7 +232,7 @@
     width: fit-content;
     margin: 5px 0;
 }
-.game-list-container .game-item .game-item-vertical {
+.game-list-container .game-item .game-item-rectangle {
     width: 150px;
     height: 85px;
     object-fit: contain;
@@ -242,8 +242,8 @@
     background-color: rgb(255,255,255,0.1);
     transition: background-color 0.3s ease, height 0.2s ease, width 0.2s ease;
 }
-.game-list-container .game-item:hover .game-item-vertical,
-.game-list-container .game-item:active .game-item-vertical {
+.game-list-container .game-item:hover .game-item-rectangle,
+.game-list-container .game-item:active .game-item-rectangle {
     background-color: var(--primary-color);
     width: 220px;
 }

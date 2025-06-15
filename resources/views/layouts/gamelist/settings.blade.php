@@ -101,11 +101,11 @@
                         <ul>
                             <li>
                                 <span>En Sevdiği Oyun: 
-                                    <b class="hasicon" font="leagueoflegends">
+                                    <b class="hasicon">
                                         <icon>
                                             <img src="{{ asset('assets/images/categories/leagueoflegends/shortcut-icon.webp') }}" alt="League Of Legends">
                                         </icon>
-                                        <p>League Of Legends</p>
+                                        <p font="leagueoflegends">League Of Legends</p>
                                     </b>
                                 </span>
                             </li>

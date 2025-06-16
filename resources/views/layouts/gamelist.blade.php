@@ -383,7 +383,7 @@
                     <div class="game-item">
                         <div class="game-item-flex">
                             <div class="game-item-title">
-                                <b font="leagueoflegends">Sex Vadisi</b>
+                                <b font="leagueoflegends">Piltover</b>
                                 <img src="{{ asset('assets/images/categories/leagueoflegends/rectangle-new-logo.webp') }}?v={{ filemtime(public_path('assets/images/categories/leagueoflegends/rectangle-new-logo.webp')) }}" alt="League of Legends Logo" class="game-item-rectangle">
                             </div>
                             <div class="game-item-user-details">
@@ -682,7 +682,7 @@
                     </div>
                     <div class="gamelist-profile-details">
                         <h3>TrinsyCa</h3>
-                        <p class="profileQuestTrigger"><img src="{{ asset('assets/images/rank/quest.webp') }}"><span>Oyun Gurmesi</span></p>
+                        <p class="profileQuestTrigger"><img src="{{ asset('assets/images/rank/walter-white.webp') }}"><span>Let's Cook</span></p>
                     </div>
                 </div>
                 <div class="gamelist-profile-rank-container">

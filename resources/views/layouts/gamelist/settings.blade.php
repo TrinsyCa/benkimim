@@ -8,7 +8,7 @@
         <div class="settings-list-tab-sides" id="settingsTabSides">
             <div class="settings-list-container-table hasBanner">
                 <div class="profileBanner">
-                    <img src="{{ asset('assets/images/banner/prestige-winterblessed-camille.webp') }}" class="profileBannerImg profileBannerTrigger">
+                    <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}" class="profileBannerImg profileBannerTrigger">
                 </div>
                 <div class="profile-topbar">
                     <div class="profile-topbar-container">
@@ -22,12 +22,12 @@
                             <h1>TrinsyCa</h1>
                             <div class="profile-quest">
                                 <div class="profile-quest-container profileQuestTrigger">
-                                    <img src="{{ asset('assets/images/rank/quest.webp') }}"><span>Oyun Gurmesi</span>
+                                    <img src="{{ asset('assets/images/rank/walter-white.webp') }}"><span>Let's Cook</span>
                                 </div>
                                 <div class="profile-quest-details">
                                     <div class="profile-quest-details-content">
                                         <div class="profile-quest-container profileQuestTrigger">
-                                            <img src="{{ asset('assets/images/rank/quest.webp') }}"><span>Oyun Gurmesi</span>
+                                            <img src="{{ asset('assets/images/rank/walter-white.webp') }}"><span>Let's Cook</span>
                                         </div>
                                         <p>50 oyunda birinci olduğu için bu rozeti kazandı.</p>
                                     </div>
@@ -212,7 +212,7 @@
                                                 </div>
                                                 <div class="option" data-value="quest-2">
                                                     <img src="{{ asset('assets/images/rank/jesse-pinkman.webp') }}">
-                                                    <span>Am Gurmesi</span>
+                                                    <span>Yeah, Science B*tch</span>
                                                 </div>
                                                 <div class="option" data-value="quest-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="currentColor" d="M18 11c0-.959-.68-1.761-1.581-1.954C16.779 8.445 17 7.75 17 7c0-2.206-1.794-4-4-4c-1.516 0-2.822.857-3.5 2.104C8.822 3.857 7.516 3 6 3C3.794 3 2 4.794 2 7c0 .902.312 1.726.817 2.396A2 2 0 0 0 2 11v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-2.637l4 2v-7l-4 2zm-5-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2M6 5c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2"/></svg>
@@ -290,7 +290,7 @@
                                 <label>Profil Afişi</label>
                                 <div class="custom-select bannerSelectTrigger">
                                     <div class="selected-option">
-                                        <img src="{{ asset('assets/images/banner/prestige-winterblessed-camille.webp') }}">
+                                        <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}">
                                     </div>
                                     <div class="options">
                                         <div class="options-container">

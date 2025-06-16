@@ -14,11 +14,13 @@ document.querySelectorAll('.custom-select').forEach(select => {
             const text = option.querySelector('span');
 
             selectedOption.innerHTML = option.innerHTML;
-            if(text.getAttribute('font')) {
-                selectedOption.querySelector('span').setAttribute('font', text.getAttribute('font'));
-            }
-            else {
-                selectedOption.querySelector('span').removeAttribute('font');
+            if(option.querySelector('span')) {
+                if(text.getAttribute('font')) {
+                    selectedOption.querySelector('span').setAttribute('font', text.getAttribute('font'));
+                }
+                else {
+                    selectedOption.querySelector('span').removeAttribute('font');
+                }
             }
 
             if(hiddenInput && value) {
@@ -37,6 +39,12 @@ document.querySelectorAll('.custom-select').forEach(select => {
                     else {
                         selectedOption.querySelector('span').removeAttribute('font');
                     }
+                });
+            }
+            if(select.classList.contains('bannerSelectTrigger')) {
+                const profileBannerTrigger = document.querySelectorAll('.profileBannerTrigger');
+                profileBannerTrigger.forEach((trigger) => {
+                    trigger.src = option.querySelector('img').src;
                 });
             }
 

@@ -170,7 +170,6 @@
     height: 500px;
 }
 .game-list-container::after,
-.settings-list-container::after,
 .gamelist-categories-container::after {
     content: '';
     position: absolute;
@@ -330,7 +329,34 @@
     border-radius: calc(20px - 10px);
 }
 .settings-list-container-table {
+    position: relative;
     height: calc(870px - (15px * 2) - 170px - 68px);
+}
+.settings-list-container-table.hasBanner {
+    gap: 0;
+}
+.settings-list-container-table .profileBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.7;
+}
+.settings-list-container-table .profileBanner .profileBannerImg {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(20px - 10px);
+    object-fit: cover;
+    object-position: center;
+}
+.settings-list-container-table .profileBanner ~ .profile-topbar .profile-topbar-info h1,
+.settings-list-container-table .profileBanner ~ .profile-topbar .profile-topbar-info .profile-quest>.profile-quest-container span,
+.settings-list-container-table .profileBanner ~ .profile-statics .profile-statics-container h4,
+.settings-list-container-table .profileBanner ~ .profile-statics .profile-statics-container ul li * {
+    text-shadow: 0 0 10px black;
 }
 .game-list-tab-container button,
 .settings-list-tab-container button {
@@ -589,6 +615,11 @@
     padding: 8px;
     white-space: nowrap;
 }
+.inputBox.labelTop .vertical-container,
+.inputBox.labelTop .horizontal-container {
+    flex-direction: column !important;
+    gap: 5px !important;
+}
 .inputBox input,
 .inputBox select {
     background-color: rgb(255,255,255,0.1);
@@ -628,6 +659,29 @@ input[readonly] {
     height: 24px;
     margin-right: 8px;
     object-fit: contain;
+}
+.inputBox.selectBox.fullMedia .vertical-container,
+.inputBox.selectBox.fullMedia .horizontal-container {
+    height: 100%;
+}
+.inputBox.selectBox.fullMedia .custom-select {
+    height: 100%;
+}
+.inputBox.fullMedia .custom-select.openDropdown .options .options-container {
+    height: 382px;
+}
+.inputBox.fullMedia .custom-select .selected-option img,
+.inputBox.fullMedia .custom-select .option img {
+    width: 182px;
+    height: 117px;
+    margin-right: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+.inputBox.fullMedia .custom-select .selected-option span,
+.inputBox.fullMedia .custom-select .option span {
+    width: 100%;
 }
 .inputBox .options {
     position: absolute;
@@ -685,14 +739,11 @@ input[readonly] {
     flex-direction: row;
     align-items: center;
 }
-.inputBox.vertical input {
-    height: 35px;
-}
 .inputBox.selectBox.vertical input {
     margin-top: 5px;
 }
-.inputBox.selectBox.horizontal.active:not(.hasInputList),
-.inputBox.selectBox.vertical.active:not(.hasInputList) {
+.inputBox.selectBox.horizontal.active:not(.hasInputList, .labelTop),
+.inputBox.selectBox.vertical.active:not(.hasInputList, .labelTop) {
     border-radius: 10px 10px 0 10px;
 }
 .inputBox.selectBox.horizontal .selected-option,
@@ -701,10 +752,8 @@ input[readonly] {
 .inputBox.selectBox.vertical .option {
     padding: 5px;
 }
-.inputBox.selectBox .custom-select,
 .inputBox.selectBox .custom-select {
     min-width: 135px;
-    height: 36px;
 }
 .inputBox .radio-group {
     display: flex;
@@ -913,12 +962,20 @@ input[readonly] {
 }
 .profile-topbar,
 .profile-statics {
+    position: relative;
+    z-index: 2;
     width: 100%;
     display: flex;
     gap: 10px;
     background-color: rgb(255,255,255,0.15);
-    border-radius: calc(20px - 10px);
     padding: 10px;
+}
+.settings-list-container-table.hasBanner .profile-topbar {
+    padding-bottom: 20px;
+}
+.settings-list-container-table:not(.hasBanner) .profile-topbar,
+.settings-list-container-table:not(.hasBanner) .profile-statics {
+    border-radius: calc(20px - 10px);
 }
 .profile-statics {
     height: 100%;
@@ -1032,7 +1089,7 @@ input[readonly] {
 .profile-topbar-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     width: 100%;
 }
 .profile-topbar-info .inputBox {
@@ -1213,6 +1270,10 @@ input[readonly] {
     padding-right: 10px;
     transition: padding-right 0.3s ease;
 }
+.profile-topbar-sidebar .inputBox {
+    width: 200px;
+    height: 100%;
+}
 .profile-short-settings .profile-dots {
     width: 30px;
     height: 30px;
@@ -1287,6 +1348,7 @@ input[readonly] {
     display: flex;
     align-items: start;
     padding-right: 0;
+    height: 100%;
 }
 .editProfileTable .profile-topbar-sidebar #saveProfile {
     height: 100%;
@@ -1313,7 +1375,7 @@ input[readonly] {
 .inputBox.selectBox .selectInputs {
     position: relative;
     width: 100%;
-    height: 36px;
+    height: 100%;
 }
 .inputBox.selectBox.vertical .selectInputs {
     margin-top: 5px;

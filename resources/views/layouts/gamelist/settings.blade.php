@@ -197,8 +197,8 @@
                                     <label>Rozet</label>
                                     <div class="custom-select questSelectTrigger">
                                         <div class="selected-option">
-                                            <img src="{{ asset('assets/images/rank/quest.webp') }}">
-                                            <span>Oyun Gurmesi</span>
+                                            <img src="{{ asset('assets/images/rank/walter-white.webp') }}">
+                                            <span>Let's Cook</span>
                                         </div>
                                         <div class="options">
                                             <div class="options-container">

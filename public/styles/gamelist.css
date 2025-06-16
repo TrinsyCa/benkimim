@@ -1144,7 +1144,7 @@ input[readonly] {
     border-radius: 22px;
     background: linear-gradient(135deg, #4f3b61, #4c385a);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    width: 280px;
 }
 .profile-topbar-info .profile-quest .profile-quest-details .profile-quest-details-content p {
     margin-top: 8px;

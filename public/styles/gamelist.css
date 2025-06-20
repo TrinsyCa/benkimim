@@ -323,39 +323,38 @@
     min-width: 840px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     height: calc(700px - (15px * 2) - 170px - 68px);
     overflow: auto;
     border-radius: calc(20px - 10px);
+}
+.game-list-container-table {
+    gap: 10px;
 }
 .settings-list-container-table {
     position: relative;
     height: calc(870px - (15px * 2) - 170px - 68px);
 }
-.settings-list-container-table.hasBanner {
-    gap: 0;
-}
 .settings-list-container-table .profileBanner {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.7;
-}
-.settings-list-container-table .profileBanner .profileBannerImg {
+    opacity: 0.85;
     width: 100%;
     height: 100%;
     border-radius: calc(20px - 10px);
     object-fit: cover;
     object-position: center;
+    display: none;
 }
-.settings-list-container-table .profileBanner ~ .profile-topbar .profile-topbar-info h1,
-.settings-list-container-table .profileBanner ~ .profile-topbar .profile-topbar-info .profile-quest>.profile-quest-container span,
-.settings-list-container-table .profileBanner ~ .profile-statics .profile-statics-container h4,
-.settings-list-container-table .profileBanner ~ .profile-statics .profile-statics-container ul li * {
+.settings-list-container-table .profileBanner.hasImg {
+    display: block;
+}
+.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar .profile-topbar-info h1,
+.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar .profile-topbar-info .profile-quest>.profile-quest-container span,
+.settings-list-container-table .profileBanner.hasImg ~ .profile-statics .profile-statics-container h4,
+.settings-list-container-table .profileBanner.hasImg ~ .profile-statics .profile-statics-container ul li * {
     text-shadow: 0 0 10px black;
 }
 .game-list-tab-container button,
@@ -657,6 +656,8 @@ input[readonly] {
 .inputBox .option svg {
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     margin-right: 8px;
     object-fit: contain;
 }
@@ -668,7 +669,7 @@ input[readonly] {
     height: 100%;
 }
 .inputBox.fullMedia .custom-select.openDropdown .options .options-container {
-    height: 382px;
+    height: 288px;
 }
 .inputBox.fullMedia .custom-select .selected-option img,
 .inputBox.fullMedia .custom-select .option img {
@@ -969,13 +970,17 @@ input[readonly] {
     gap: 10px;
     background-color: rgb(255,255,255,0.15);
     padding: 10px;
+    border-radius: calc(20px - 10px);
 }
-.settings-list-container-table.hasBanner .profile-topbar {
+.settings-list-container-table .profileBanner:not(.hasImg) ~ .profile-topbar {
+    margin-bottom: 10px;
+}
+.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar {
     padding-bottom: 20px;
 }
-.settings-list-container-table:not(.hasBanner) .profile-topbar,
-.settings-list-container-table:not(.hasBanner) .profile-statics {
-    border-radius: calc(20px - 10px);
+.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar,
+.settings-list-container-table .profileBanner.hasImg ~ .profile-statics {
+    background-color: transparent;
 }
 .profile-statics {
     height: 100%;
@@ -1300,7 +1305,6 @@ input[readonly] {
     padding: 2px;
     background: linear-gradient(135deg, #5b408a, #5f4496);
     border-radius: calc(20px - 10px);
-    
     margin-bottom: 30px;
 }
 .profile-elo .profile-elo-content {
@@ -1310,6 +1314,20 @@ input[readonly] {
     background: linear-gradient(135deg, #432F66, #422F68);
     border-radius: calc(20px - 13px);
     padding: 0 35px;
+    position: relative;
+}
+.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar .profile-elo .profile-elo-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: calc(100% + 36px);
+    background-color: rgb(0,0,0,0.85);
+    filter: blur(25px);
+    z-index: -1;
+    padding: 5px;
 }
 .profile-elo .profile-elo-content p {
     font-size: 1.4rem;

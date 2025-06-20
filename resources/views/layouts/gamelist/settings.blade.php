@@ -7,9 +7,7 @@
     <div class="settings-list-tab-sides-container" id="settingsTabSidesContainer">
         <div class="settings-list-tab-sides" id="settingsTabSides">
             <div class="settings-list-container-table hasBanner">
-                <div class="profileBanner">
-                    <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}" class="profileBannerImg profileBannerTrigger">
-                </div>
+                <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}" class="profileBanner hasImg profileBannerTrigger">
                 <div class="profile-topbar">
                     <div class="profile-topbar-container">
                         <div class="profile-topbar-picture">
@@ -297,6 +295,10 @@
                                     </div>
                                     <div class="options">
                                         <div class="options-container">
+                                            <div class="option" data-value="banner-0">
+                                                <svg style="background: white; padding: 1px; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="none"/><path fill="#f20000" d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896M288 512a38.4 38.4 0 0 0 38.4 38.4h371.2a38.4 38.4 0 0 0 0-76.8H326.4A38.4 38.4 0 0 0 288 512"/></svg>
+                                                <span>Afişi Kaldır</span>
+                                            </div>
                                             <div class="option" data-value="banner-1">
                                                 <img src="{{ asset('assets/images/banner/prestige-winterblessed-camille.webp') }}">
                                             </div>

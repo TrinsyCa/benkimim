@@ -44,7 +44,14 @@ document.querySelectorAll('.custom-select').forEach(select => {
             if(select.classList.contains('bannerSelectTrigger')) {
                 const profileBannerTrigger = document.querySelectorAll('.profileBannerTrigger');
                 profileBannerTrigger.forEach((trigger) => {
-                    trigger.src = option.querySelector('img').src;
+                    if(value && value !== "banner-0") {
+                        trigger.classList.add('hasImg');
+                        trigger.src = option.querySelector('img').src;
+                    }
+                    else {
+                        trigger.classList.remove('hasImg');
+                        trigger.removeAttribute('src');
+                    }
                 });
             }
 

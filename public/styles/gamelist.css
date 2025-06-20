@@ -353,8 +353,8 @@
 }
 .settings-list-container-table .profileBanner.hasImg ~ .profile-topbar .profile-topbar-info h1,
 .settings-list-container-table .profileBanner.hasImg ~ .profile-topbar .profile-topbar-info .profile-quest>.profile-quest-container span,
-.settings-list-container-table .profileBanner.hasImg ~ .profile-statics .profile-statics-container h4,
-.settings-list-container-table .profileBanner.hasImg ~ .profile-statics .profile-statics-container ul li * {
+.settings-list-container-table .profileBanner.hasImg ~ .gamelist-full-section .gamelist-full-section-container h4,
+.settings-list-container-table .profileBanner.hasImg ~ .gamelist-full-section .gamelist-full-section-container ul li * {
     text-shadow: 0 0 10px black;
 }
 .game-list-tab-container button,
@@ -962,7 +962,7 @@ input[readonly] {
     padding: 5px;
 }
 .profile-topbar,
-.profile-statics {
+.gamelist-full-section {
     position: relative;
     z-index: 2;
     width: 100%;
@@ -979,34 +979,34 @@ input[readonly] {
     padding-bottom: 20px;
 }
 .settings-list-container-table .profileBanner.hasImg ~ .profile-topbar,
-.settings-list-container-table .profileBanner.hasImg ~ .profile-statics {
+.settings-list-container-table .profileBanner.hasImg ~ .gamelist-full-section {
     background-color: transparent;
 }
-.profile-statics {
+.gamelist-full-section {
     height: 100%;
 }
-.profile-statics-container h4 {
+.gamelist-full-section-container h4 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
-.profile-statics-container ul {
+.gamelist-full-section-container ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.profile-statics-container ul li {
+.gamelist-full-section-container ul li {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.profile-statics-container ul li span {
+.gamelist-full-section-container ul li span {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.profile-statics-container ul li span b {
+.gamelist-full-section-container ul li span b {
     background-color: rgb(255,255,255,0.15);
     border: 1px solid rgb(255,255,255,0.15);
     border-radius: 50px;
@@ -1015,17 +1015,17 @@ input[readonly] {
     gap: 7px;
     transition: background-color 0.3s ease;
 }
-.profile-statics-container ul li span b:hover {
+.gamelist-full-section-container ul li span b:hover {
     background-color: rgb(255,255,255,0.25);
 }
-.profile-statics-container ul li span b p {
+.gamelist-full-section-container ul li span b p {
     font-size: 1.3rem;
     padding: 6px 12px;
 }
-.profile-statics-container ul li span b.hasicon p {
+.gamelist-full-section-container ul li span b.hasicon p {
     padding-left: 2px;
 }
-.profile-statics-container ul li span b icon {
+.gamelist-full-section-container ul li span b icon {
     width: 40px;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -1036,8 +1036,8 @@ input[readonly] {
     border-radius: 50%;
     padding: 5px;
 }
-.profile-statics-container ul li img,
-.profile-statics-container ul li svg {
+.gamelist-full-section-container ul li img,
+.gamelist-full-section-container ul li svg {
     width: 25px;
     height: 25px;
     object-fit: contain;
@@ -1100,9 +1100,13 @@ input[readonly] {
 .profile-topbar-info .inputBox {
     width: 100%;
 }
-.profile-topbar-info h1 {
+.profile-topbar .profile-topbar-info h1,
+.gamelist-full-section h1 {
     font-size: 1.5rem;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .profile-topbar-info .profile-quest {
     position: relative;
@@ -1421,4 +1425,41 @@ input[readonly] {
 .inputBox.selectBox .selectInputs input.active {
     scale: 1;
     opacity: 1;
+}
+.deleteAccForm .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.deleteAccForm #deleteAccBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    width: fit-content;
+    white-space: nowrap;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.2s ease;
+    pointer-events: none;
+}
+.deleteAccForm #deleteAccBtn * {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+.deleteAccForm #deleteAccBtn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.deleteAccForm #deleteAccBtn:hover * {
+    opacity: 1;
+}
+.deleteAccForm #deleteAccBtn:active {
+    scale: 0.9;
+}
+.deleteAccForm #deleteAccBtn.active {
+    pointer-events: all;
 }

@@ -101,6 +101,7 @@ selectBoxes.forEach((selectBox) => {
         if(input.getAttribute('name') === option.getAttribute('data-value')) {
           setTimeout(() => {
             input.classList.add('active');
+            selectBox.querySelector('label').setAttribute('for', option.getAttribute('data-value'));
           }, 150);
         }
         else {

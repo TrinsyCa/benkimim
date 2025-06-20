@@ -628,7 +628,7 @@
     text-align: center;
     width: 100%;
     border: 1px solid transparent;
-    transition: border 0.2s ease;
+    transition: border 0.2s ease, background 0.3s ease;
 }
 input[readonly] {
     pointer-events: none;
@@ -1387,7 +1387,12 @@ input[readonly] {
     width: 100%;
     height: 100%;
     margin-top: 0;
-    transition: border 0.2s ease, scale 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    transition: border 0.2s ease, scale 0.3s ease, opacity 0.3s ease, padding 0.3s ease, background 0.3s ease;
+}
+.inputBox input:hover,
+.inputBox input:focus,
+.inputBox input:active {
+    background: #856E90;
 }
 .inputBox.selectBox .selectInputs input:not(.active) {
     padding: 0;

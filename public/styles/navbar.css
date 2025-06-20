@@ -20,19 +20,30 @@ nav ul {
     list-style: none;
 }
 nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+nav ul li a,
+nav ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     white-space: nowrap;
     padding: 10px 0;
     border-radius: 50px;
-    margin: 0 3px;
     transition: background-color 0.3s ease, scale 0.2s ease;
-}
-nav ul li a {
+    background: transparent;
     padding: 10px 18px;
 }
-nav ul li:hover {
+nav ul li a:hover,
+nav ul li button:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-nav ul li:active {
+nav ul li a:active,
+nav ul li button:active {
     background-color: rgba(255, 255, 255, 0.1);
     scale: 0.9;
 }

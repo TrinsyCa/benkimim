@@ -6,7 +6,7 @@
     </div>
     <div class="settings-list-tab-sides-container" id="settingsTabSidesContainer">
         <div class="settings-list-tab-sides" id="settingsTabSides">
-            <div class="settings-list-container-table hasBanner">
+            <div class="settings-list-container-table profile-staticstics-table">
                 <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}" class="profileBanner hasImg profileBannerTrigger">
                 <div class="profile-topbar">
                     <div class="profile-topbar-container">
@@ -314,6 +314,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="gamelist-full-section">
+                    <div class="gamelist-full-section-container center-section">
+                        <h5>Özel Tema Masaları Yakında Gelecek..</h5>
                     </div>
                 </div>
             </div>

@@ -974,10 +974,11 @@ input[readonly] {
     padding: 10px;
     border-radius: calc(20px - 10px);
 }
-.settings-list-container-table .profileBanner:not(.hasImg) ~ .profile-topbar {
+.settings-list-container-table.profile-staticstics-table .profileBanner:not(.hasImg) ~ .profile-topbar,
+.settings-list-container-table:not(.profile-staticstics-table) .profile-topbar {
     margin-bottom: 10px;
 }
-.settings-list-container-table .profileBanner.hasImg ~ .profile-topbar {
+.settings-list-container-table.profile-staticstics-table .profileBanner.hasImg ~ .profile-topbar {
     padding-bottom: 20px;
 }
 .settings-list-container-table .profileBanner.hasImg ~ .profile-topbar,

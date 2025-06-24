@@ -27,6 +27,7 @@
     <script src="{{ asset('scripts/app.js') }}?v={{ filemtime(public_path('scripts/app.js')) }}"></script>
     <script src="{{ asset('scripts/account.js') }}?v={{ filemtime(public_path('scripts/account.js')) }}"></script>
     <script src="{{ asset('scripts/alert.js') }}?v={{ filemtime(public_path('scripts/alert.js')) }}"></script>
+    <script src="{{ asset('scripts/remove-ext.js') }}?v={{ filemtime(public_path('scripts/remove-ext.js')) }}"></script>
     {{-- Static Scripts --}}
 
     {{-- Dynamic Scripts --}}

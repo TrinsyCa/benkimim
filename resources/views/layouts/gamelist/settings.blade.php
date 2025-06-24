@@ -5,7 +5,7 @@
         <button id="settingslistTabSettingsBtn">Ayarlar</button>
     </div>
     <div class="settings-list-tab-sides-container" id="settingsTabSidesContainer">
-        <div class="settings-list-tab-sides" id="settingsTabSides">
+        <div class="settings-list-tab-sides" id="settingsTabSides" style="translate: 0px;">
             <div class="settings-list-container-table profile-staticstics-table">
                 <img src="{{ asset('assets/images/banner/breaking-bad.webp') }}" class="profileBanner hasImg profileBannerTrigger">
                 <div class="profile-topbar">

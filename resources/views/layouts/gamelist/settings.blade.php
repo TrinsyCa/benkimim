@@ -11,9 +11,6 @@
                 <div class="profile-topbar">
                     <div class="profile-topbar-container">
                         <div class="profile-topbar-picture">
-                            <button class="profile-picture-camera">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20"><rect width="20" height="20" fill="none"/><path fill="currentColor" d="M8.123 2a1.5 1.5 0 0 0-1.34.826L6.193 4h-1.69a2.5 2.5 0 0 0-2.5 2.5v8a2.5 2.5 0 0 0 2.5 2.5h3.5q.012-.171.055-.347l.375-1.498c.116-.464.335-.896.639-1.263A4.002 4.002 0 0 1 9.999 6a4 4 0 0 1 3.888 3.056l.216-.215a2.87 2.87 0 0 1 3.9-.147V6.499a2.5 2.5 0 0 0-2.5-2.5h-1.689l-.585-1.17A1.5 1.5 0 0 0 11.887 2zM13 9.945a3 3 0 1 0-3.055 3.054zm1.81-.397l-4.83 4.83a2.2 2.2 0 0 0-.577 1.02l-.375 1.498a.89.89 0 0 0 1.079 1.078l1.498-.374a2.2 2.2 0 0 0 1.02-.578l4.83-4.83a1.87 1.87 0 0 0-2.645-2.644"/></svg>
-                            </button>
                             <img  src="{{ asset('assets/images/users/profilepic/user-1.webp') }}" alt="user-1">
                         </div>
                         <div class="profile-topbar-info">
@@ -323,13 +320,28 @@
             <div class="settings-list-container-table">
                 <div class="gamelist-full-section">
                     <div class="gamelist-full-section-container">
-                        <h1>Hesabımı Kaldırmak İstiyorum <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><rect width="36" height="36" fill="none"/><path fill="#ffcc4d" d="M36 18c0 9.941-8.059 18-18 18c-9.94 0-18-8.059-18-18C0 8.06 8.06 0 18 0c9.941 0 18 8.06 18 18"/><ellipse cx="11.5" cy="16.5" fill="#664500" rx="2.5" ry="3.5"/><ellipse cx="24.5" cy="16.5" fill="#664500" rx="2.5" ry="3.5"/><path fill="#664500" d="M23.485 27.879C23.474 27.835 22.34 23.5 18 23.5s-5.474 4.335-5.485 4.379a.5.5 0 0 0 .232.544a.51.51 0 0 0 .596-.06c.009-.007 1.013-.863 4.657-.863c3.59 0 4.617.83 4.656.863a.5.5 0 0 0 .59.073a.5.5 0 0 0 .239-.557"/><path fill="#5dadec" d="M10 30c0 2.762-2.238 5-5 5s-5-2.238-5-5s4-10 5-10s5 7.238 5 10"/><path fill="#664500" d="M30 13c-5.554 0-7.802-4.367-7.895-4.553a1 1 0 0 1 1.787-.899C23.967 7.694 25.713 11 30 11a1 1 0 1 1 0 2M6 13a1 1 0 0 1 0-2c5.083 0 5.996-3.12 6.033-3.253c.145-.528.69-.848 1.219-.709s.851.673.718 1.205C13.921 8.437 12.704 13 6 13"/></svg></h1>
+                        <h1>Hesabımı Silmek İstiyorum <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><rect width="36" height="36" fill="none"/><path fill="#ffcc4d" d="M36 18c0 9.941-8.059 18-18 18c-9.94 0-18-8.059-18-18C0 8.06 8.06 0 18 0c9.941 0 18 8.06 18 18"/><ellipse cx="11.5" cy="16.5" fill="#664500" rx="2.5" ry="3.5"/><ellipse cx="24.5" cy="16.5" fill="#664500" rx="2.5" ry="3.5"/><path fill="#664500" d="M23.485 27.879C23.474 27.835 22.34 23.5 18 23.5s-5.474 4.335-5.485 4.379a.5.5 0 0 0 .232.544a.51.51 0 0 0 .596-.06c.009-.007 1.013-.863 4.657-.863c3.59 0 4.617.83 4.656.863a.5.5 0 0 0 .59.073a.5.5 0 0 0 .239-.557"/><path fill="#5dadec" d="M10 30c0 2.762-2.238 5-5 5s-5-2.238-5-5s4-10 5-10s5 7.238 5 10"/><path fill="#664500" d="M30 13c-5.554 0-7.802-4.367-7.895-4.553a1 1 0 0 1 1.787-.899C23.967 7.694 25.713 11 30 11a1 1 0 1 1 0 2M6 13a1 1 0 0 1 0-2c5.083 0 5.996-3.12 6.033-3.253c.145-.528.69-.848 1.219-.709s.851.673.718 1.205C13.921 8.437 12.704 13 6 13"/></svg></h1>
                         <form class="section-space deleteAccForm">
                             <div class="checkbox-group">
-                                <input type="checkbox" name="" id="deleteAccCheckInput" onclick="document.getElementById('deleteAccBtn').classList.toggle('active');">
-                                <label for="deleteAccCheckInput">
-                                    <span>Bu işlemi yaptığımda <b>Ben Kimim?</b> ve <b>TrinsyCa</b> hesaplarımın silineceğini onaylıyorum.</span>
-                                </label>
+                                <div class="checkbox-container">
+                                    <label class="ios-checkbox purple">
+                                        <input type="checkbox" onclick="document.getElementById('deleteAccBtn').classList.toggle('active');" />
+                                        <div class="checkbox-wrapper">
+                                        <div class="checkbox-bg"></div>
+                                        <svg class="checkbox-icon" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                            class="check-path"
+                                            d="M4 12L10 18L20 6"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                        </div>
+                                        <span>Bu işlemi yaptığımda <b>Ben Kimim?</b> ve <b>TrinsyCa</b> hesaplarımın silineceğini onaylıyorum.</span>
+                                    </label>
+                                </div>
                             </div>
                             <button id="deleteAccBtn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#fff" d="m15.241 3.721l.293 2.029H19.5a.75.75 0 0 1 0 1.5h-.769l-.873 10.185c-.053.62-.096 1.13-.165 1.542c-.07.429-.177.813-.386 1.169a3.25 3.25 0 0 1-1.401 1.287c-.372.177-.764.25-1.198.284c-.417.033-.928.033-1.55.033h-2.316c-.622 0-1.133 0-1.55-.033c-.434-.034-.826-.107-1.198-.284a3.25 3.25 0 0 1-1.401-1.287c-.21-.356-.315-.74-.386-1.169c-.069-.413-.112-.922-.165-1.542L5.269 7.25H4.5a.75.75 0 0 1 0-1.5h3.966l.293-2.029l.011-.061c.182-.79.86-1.41 1.71-1.41h3.04c.85 0 1.528.62 1.71 1.41zM9.981 5.75h4.037l-.256-1.776c-.048-.167-.17-.224-.243-.224h-3.038c-.073 0-.195.057-.243.224zm1.269 4.75a.75.75 0 0 0-1.5 0v5a.75.75 0 0 0 1.5 0zm3 0a.75.75 0 0 0-1.5 0v5a.75.75 0 0 0 1.5 0z"/></svg>

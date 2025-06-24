@@ -1014,6 +1014,7 @@ input[readonly] {
     align-items: center;
     gap: 7px;
     transition: background-color 0.3s ease;
+    backdrop-filter: blur(3px);
 }
 .gamelist-full-section-container ul li span b:hover {
     background-color: rgb(255,255,255,0.25);
@@ -1125,6 +1126,7 @@ input[readonly] {
     border: 1px solid rgb(255,255,255,0.15);
     border-radius: 50px;
     transition: background-color 0.3s ease;
+    backdrop-filter: blur(3px);
 }
 .profile-topbar-info .profile-quest>.profile-quest-container:hover {
     background-color: rgb(255,255,255,0.25);
@@ -1296,6 +1298,7 @@ input[readonly] {
     opacity: 1;
     scale: 1;
     transition: background-color 0.3s ease;
+    backdrop-filter: blur(3px);
 }
 .profile-short-settings .profile-dots:hover {
     background-color: rgb(255,255,255,0.25);
@@ -1443,21 +1446,23 @@ input[readonly] {
     width: fit-content;
     white-space: nowrap;
     padding: 8px 12px;
-    cursor: pointer;
+    cursor: not-allowed;
     transition: background-color 0.3s ease, scale 0.2s ease;
-    pointer-events: none;
+}
+.deleteAccForm #deleteAccBtn.active {
+    cursor: pointer;
 }
 .deleteAccForm #deleteAccBtn * {
     opacity: 0.85;
     transition: opacity 0.3s ease;
 }
-.deleteAccForm #deleteAccBtn:hover {
+.deleteAccForm #deleteAccBtn.active:hover {
     background-color: rgba(255, 0, 0, 0.8);
 }
-.deleteAccForm #deleteAccBtn:hover * {
+.deleteAccForm #deleteAccBtn.active:hover * {
     opacity: 1;
 }
-.deleteAccForm #deleteAccBtn:active {
+.deleteAccForm #deleteAccBtn.active:active {
     scale: 0.9;
 }
 .deleteAccForm #deleteAccBtn.active {

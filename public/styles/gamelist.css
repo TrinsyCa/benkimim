@@ -60,6 +60,7 @@
     border-radius: calc(20px - 10px);
     background-color: rgb(255,255,255,0.15);
     transition: background-color 0.3s ease, scale 0.2s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    cursor: pointer;
 }
 .playgame-item .play-button span {
     display: flex;
@@ -891,6 +892,7 @@ input[readonly] {
     padding: 10px;
     background-color: transparent;
     transition: background-color 0.3s ease, top 0.3s ease;
+    cursor: pointer;
 }
 .gamelist-profile #settingsSecBtn span,
 .gamelist-profile #settingsSecBtnClose  span{

@@ -393,7 +393,7 @@
     color: var(--text-color);
     pointer-events: none;
 }
-.gamelist-profile-menu {
+.gamelist-profile-menu-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -402,9 +402,31 @@
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 10px;
+    height: 160px;
+    overflow: hidden;
 }
-.gamelist-profile {
-    height: 140px;
+.gamelist-profile-account-btn button {
+    height: 100%;
+    width: 100%;
+    border-radius: calc(20px - 13px);
+    background: rgb(255,255,255,0.2);
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color-secondary);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.gamelist-profile-account-btn button:hover,
+.gamelist-profile-account-btn button:active {
+    background: rgb(255,255,255,0.35);
+}
+.gamelist-profile-account-btn button.active {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+.gamelist-profile,
+.gamelist-profile-account-btn {
+    min-height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -412,6 +434,9 @@
     padding: 10px;
     border-radius: calc(20px - 10px);
     transition: background-color 0.3s ease, scale 0.2s ease;
+}
+.gamelist-profile-account-btn {
+    gap: 10px;
 }
 .gamelist-profile-top {
     display: flex;
@@ -474,8 +499,8 @@
     border-radius: calc(20px - 13px);
     background: linear-gradient(135deg, #432F66, #422F68);
 }
-.gamelist-profile:hover .gamelist-profile-rank-container, 
-.gamelist-profile:active .gamelist-profile-rank-container {
+.gamelist:not(.noAcc) .gamelist-profile:hover .gamelist-profile-rank-container, 
+.gamelist:not(.noAcc) .gamelist-profile:active .gamelist-profile-rank-container {
     background: var(--primary-color);
 }
 .gamelist-profile .gamelist-profile-rank p {

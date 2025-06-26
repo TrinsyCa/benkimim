@@ -713,7 +713,7 @@ input[readonly] {
     opacity: 1;
 }
 .inputBox .custom-select.openDropdown .options .options-container {
-    height: 132px;
+    height: 136px;
 }
 .inputBox .custom-select.openDropdown .selected-option {
     background: rgb(255,255,255,0.3);

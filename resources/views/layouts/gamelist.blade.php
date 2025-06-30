@@ -676,10 +676,10 @@
     <div class="gamelist-sidebar">
         <div class="gamelist-profile-menu">
             <div class="gamelist-profile-menu-container">
-                <div class="gamelist-profile-account-btn">
+                {{-- <div class="gamelist-profile-account-btn">
                     <button id="signup">Kayıt Ol</button>
                     <button id="signin">Giriş Yap</button>
-                </div>
+                </div> --}}
                 <div class="gamelist-profile" id="gamelistProfile">
                     <div class="gamelist-profile-top">
                         <div class="gamelist-profile-picture">
